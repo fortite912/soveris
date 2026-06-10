@@ -1,0 +1,49 @@
+# ============================================================
+#  RESOLV - .gitignore
+# ============================================================
+
+# --- Base de données générée par l'agent (ne jamais publier) ---
+soveris.db
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.db-wal
+*.db-shm
+
+# --- Cache et build Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+build/
+dist/
+*.egg-info/
+
+# --- Environnements virtuels ---
+venv/
+.venv/
+env/
+ENV/
+
+# --- Fichiers temporaires ---
+*.tmp
+*.log
+*.bak
+*~
+
+# --- Secrets (sécurité : jamais de credentials dans le dépôt) ---
+.env
+.env.*
+secrets.*
+config.local.*
+
+# --- Systèmes d'exploitation ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Éditeurs / IDE ---
+.vscode/
+.idea/
+*.swp
+*.swo
