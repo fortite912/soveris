@@ -163,6 +163,11 @@ en tester le comportement isolément.
   cas hors périmètre) et mesure aussi les *fausses résolutions* — la métrique
   de confiance d'une DSI.
 
+## Limites connues
+
+L'état honnête de ce qui sépare ce POC d'un produit industriel (moteur,
+intégration, sécurité, conformité) est documenté dans **[LIMITES.md](LIMITES.md)**.
+
 ## Feuille de route
 
 - [ ] Pondération des mots-clés et gestion des synonymes
