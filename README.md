@@ -83,7 +83,14 @@ python demo.py
 
 # Mode interactif : saisissez vos propres incidents
 python demo.py --interactif
+
+# Interface web locale (ouvre http://127.0.0.1:8000 dans le navigateur)
+python web.py
 ```
+
+> L'interface web est servie par `http.server` (bibliothèque standard) et
+> n'écoute que sur **127.0.0.1** : rien n'est exposé au réseau, aucune donnée
+> ne quitte la machine.
 
 ## Exemple de sortie
 
@@ -130,6 +137,7 @@ appariés, vocabulaire familier (« ordi »). Leur traitement est en feuille de 
 | `soveris.py` | Moteur : normalisation, scoring par frontière de mot, arbitrage |
 | `database.py` | Persistance SQLite + calcul des métriques |
 | `demo.py` | Démonstration automatique et mode interactif (couleurs ANSI natives) |
+| `web.py` | Interface web locale de démonstration (`http.server` — 100 % stdlib, lié à 127.0.0.1) |
 | `validation.py` | Banc de validation indépendant : 50 tickets étiquetés, mesure des fausses résolutions |
 | `tests.py` | Suite de tests automatisés (19 vérifications, `python tests.py`) |
 
