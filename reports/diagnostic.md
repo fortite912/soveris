@@ -1,13 +1,6 @@
 # Auto-diagnostic Soveris
 
-_Genere le 2026-11-04T13:17:55_ — verdict : **OK** (code 0)
-
-## Tests
-
-| Suite | Statut | Duree |
-|---|---|---|
-| unittest (tests/) | OK | 0.73 s |
-| tests.py (historique) | OK | 0.1 s |
+_Genere le 2026-11-04T13:20:23_ — verdict : **OK** (code 0)
 
 ## Evaluation
 

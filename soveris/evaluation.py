@@ -77,9 +77,9 @@ def verdict(cas, resultat):
     return "FAUSSE_DANGEREUSE" if cas["critique"] else "FAUSSE_HORS_PERIMETRE"
 
 
-def evaluer_cas(cas):
+def evaluer_cas(cas, parametres=None):
     """Analyse un cas et renvoie la ligne detaillee du rapport."""
-    r = analyser(cas["texte"])
+    r = analyser(cas["texte"], parametres)
     v = verdict(cas, r)
     return {
         "id": cas.get("id"),
@@ -101,11 +101,11 @@ def evaluer_cas(cas):
     }
 
 
-def evaluer_jeu(nom):
-    """Evalue un jeu complet et renvoie le rapport structure."""
+def evaluer_jeu(nom, parametres=None):
+    """Evalue un jeu complet et renvoie le rapport structure (parametres : essai sans ecriture)."""
     cas = charger_jeu(nom)
     depart = time.perf_counter()
-    lignes = [evaluer_cas(c) for c in cas]
+    lignes = [evaluer_cas(c, parametres) for c in cas]
     duree_totale_ms = (time.perf_counter() - depart) * 1000
     return construire_rapport(nom, lignes, duree_totale_ms)
 

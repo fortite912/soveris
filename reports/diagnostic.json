@@ -1,5 +1,5 @@
 {
- "horodatage": "2026-11-04T13:17:55",
+ "horodatage": "2026-11-04T13:20:23",
  "verdict": "OK",
  "code_sortie": 0,
  "baseline": {
@@ -80,33 +80,7 @@
    }
   }
  },
- "tests": {
-  "unittest (tests/)": {
-   "ok": true,
-   "code": 0,
-   "duree_s": 0.73,
-   "dernieres_lignes": [
-    "..............",
-    "----------------------------------------------------------------------",
-    "Ran 14 tests in 0.500s",
-    "",
-    "OK"
-   ]
-  },
-  "tests.py (historique)": {
-   "ok": true,
-   "code": 0,
-   "duree_s": 0.1,
-   "dernieres_lignes": [
-    "  [OK ] Integrite de la base de connaissances",
-    "  [OK ] Jeu de demonstration verrouille : 7/10 resolus (70 %)",
-    "  [OK ] Validation 50 tickets : au moins 46/50 decisions correctes (92 %)",
-    "  [OK ] Validation : ZERO fausse resolution dangereuse",
-    "--------------------------------------------------------",
-    "  TOUS LES TESTS PASSENT (19/19)"
-   ]
-  }
- },
+ "tests": {},
  "evaluation": {
   "test": {
    "total": 50,
@@ -130,7 +104,7 @@
     "Donnees": 100.0,
     "Inconnu": 87.5
    },
-   "latence_p95_ms": 0.396
+   "latence_p95_ms": 0.618
   },
   "dev": {
    "total": 83,
@@ -154,7 +128,7 @@
     "Donnees": 60.0,
     "Inconnu": 80.0
    },
-   "latence_p95_ms": 0.402
+   "latence_p95_ms": 0.639
   },
   "synthetique": {
    "total": 204,
@@ -178,7 +152,7 @@
     "Donnees": 100.0,
     "Inconnu": 100.0
    },
-   "latence_p95_ms": 0.505
+   "latence_p95_ms": 0.636
   }
  },
  "ecarts": [],
