@@ -4,5 +4,5 @@
  "tolerance_pluriel": true,
  "poids_partage": false,
  "poids_multimot": 1.0,
- "marge_n2": 0.0
+ "marge_n2": 1.0
 }
