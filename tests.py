@@ -110,11 +110,13 @@ verifier("Jeu de demonstration verrouille : 7/10 resolus (70 %)", nb_auto == 7, 
 # Le banc mesure l'exactitude des decisions ET les fausses resolutions
 # (l'agent qui repond a tort). Etat de reference : 46/50 corrects,
 # zero fausse resolution dangereuse. Toute regression fait echouer.
+# Verrou de NON-REGRESSION (>=) : un verrou d'egalite interdirait
+# toute amelioration mesuree ; le jeu lui-meme est gele dans data/.
 import validation
 
 b = validation.evaluer()
-verifier("Validation 50 tickets : 46/50 decisions correctes (92 %)",
-         b["corrects"] == 46, f"{b['corrects']}/50")
+verifier("Validation 50 tickets : au moins 46/50 decisions correctes (92 %)",
+         b["corrects"] >= 46, f"{b['corrects']}/50")
 verifier("Validation : ZERO fausse resolution dangereuse",
          len(b["fausses_dangereuses"]) == 0, str(len(b["fausses_dangereuses"])))
 

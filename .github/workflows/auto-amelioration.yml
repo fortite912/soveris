@@ -1,0 +1,70 @@
+# Boucle d'auto-amelioration hebdomadaire : DESACTIVEE par defaut.
+#   - activer   : variable de depot SOVERIS_AUTO_AMELIORATION = true
+#   - auto-merge: variable de depot SOVERIS_AUTO_MERGE = true (un seul reglage ;
+#                 ne s'applique que si la calibration a change quelque chose et
+#                 que la CI passe ; la protection de branche reste souveraine)
+name: Auto-amelioration hebdomadaire
+
+on:
+  schedule:
+    - cron: "17 6 * * 1"   # lundi 06:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  diagnostic-et-calibration:
+    if: vars.SOVERIS_AUTO_AMELIORATION == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Auto-diagnostic
+        id: diagnostic
+        run: |
+          python -m soveris diagnose > diagnostic.log || echo "code=$?" >> "$GITHUB_OUTPUT"
+          cat diagnostic.log
+
+      - name: Calibration controlee (garde-fous G1..G6)
+        id: calibration
+        run: |
+          python -m soveris calibrer --appliquer | tee calibration.log
+          echo "applique=$(python -c 'import json;print(str(json.load(open("reports/calibration.json"))["applique"]).lower())')" >> "$GITHUB_OUTPUT"
+
+      - name: Corps de la pull request
+        run: |
+          {
+            echo "## Auto-diagnostic hebdomadaire"
+            echo
+            cat reports/diagnostic.md
+            echo
+            echo "## Calibration"
+            echo
+            echo '```'
+            cat calibration.log
+            echo '```'
+            echo
+            echo "_Ouvert automatiquement par le workflow auto-amelioration. Aucun appel reseau dans le moteur ; seuls les rapports et, le cas echeant, soveris/parametres.json ont change._"
+          } > corps_pr.md
+
+      - name: Pull request
+        id: pr
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: auto/amelioration
+          title: "Auto-amelioration : diagnostic hebdomadaire et calibration"
+          body-path: corps_pr.md
+          commit-message: "Auto-amelioration : diagnostic et calibration hebdomadaires"
+          labels: auto-amelioration
+          delete-branch: true
+
+      - name: Auto-merge (desactive par defaut)
+        if: vars.SOVERIS_AUTO_MERGE == 'true' && steps.calibration.outputs.applique == 'true' && steps.pr.outputs.pull-request-number != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh pr merge --auto --squash "${{ steps.pr.outputs.pull-request-number }}"

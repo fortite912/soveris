@@ -1,0 +1,849 @@
+{
+ "description": "Jeu de DEV : tickets rediges pour iterer sur le moteur. Peut etre enrichi (y compris depuis la file 'a revoir'). Jamais confondu avec le jeu gele.",
+ "cas": [
+  {
+   "id": "D-001",
+   "texte": "bonjour le wifi de mon bureau ne fonctionne plus depuis ce matin",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Reseau"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-002",
+   "texte": "plus de connexion internet sur mon poste fixe, le cable est bien branche",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Reseau",
+    "Materiel"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-003",
+   "texte": "je suis deconnecte du reseau toutes les cinq minutes",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Reseau"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-004",
+   "texte": "le vpn se coupe des que je lance une visio en teletravail",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Reseau",
+    "Collaboration"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-005",
+   "texte": "impossible d etablir le tunnel vpn depuis l hotel",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Reseau"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-006",
+   "texte": "mon pc ne voit aucun reseau wi-fi",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Reseau"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-007",
+   "texte": "la connexion est tres instable en salle 204",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Reseau"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-008",
+   "texte": "j ai oublie mon mot de passe windows",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Compte / Acces"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-009",
+   "texte": "mon compte est verrouille apres 3 tentatives",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Compte / Acces"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-010",
+   "texte": "je n arrive pas a ouvrir ma session ce matin, identifiant refuse",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Compte / Acces"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-011",
+   "texte": "le mot de passe de ma messagerie a expire",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Compte / Acces",
+    "Messagerie"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-012",
+   "texte": "je n ai pas les droits sur le dossier partage marketing",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Compte / Acces"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-013",
+   "texte": "le lecteur reseau P n apparait plus dans mon explorateur",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Compte / Acces",
+    "Reseau"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-014",
+   "texte": "acces refuse quand j ouvre le fichier du budget sur le serveur",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Compte / Acces"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-015",
+   "texte": "pouvez vous reinitialiser mon mdp svp",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Compte / Acces"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-016",
+   "texte": "outlook ne se synchronise plus",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Messagerie"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-017",
+   "texte": "je ne peux plus envoyer de mails, ils restent dans la boite d envoi",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Messagerie"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-018",
+   "texte": "mes courriels arrivent avec plusieurs heures de retard",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Messagerie"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-019",
+   "texte": "la piece jointe ne s ouvre pas dans outlook",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Messagerie"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-020",
+   "texte": "ma boite mail est pleine",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Messagerie"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-021",
+   "texte": "je ne recois plus les emails de mes collegues",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Messagerie"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-022",
+   "texte": "l imprimante du couloir est en bourrage",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Materiel"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-023",
+   "texte": "plus d encre dans l imprimante de la compta",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Materiel"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-024",
+   "texte": "impossible d imprimer depuis mon poste, le document reste en attente",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Materiel"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-025",
+   "texte": "le scanner ne numerise plus en recto verso",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Materiel"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-026",
+   "texte": "mon deuxieme ecran reste noir",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Materiel"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-027",
+   "texte": "ma souris sans fil ne reagit plus",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Materiel"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-028",
+   "texte": "le clavier de mon portable a des touches qui ne repondent pas",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Materiel",
+    "Telephonie"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-029",
+   "texte": "la webcam n est pas detectee",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Materiel",
+    "Collaboration"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-030",
+   "texte": "ma cle usb n est pas reconnue",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Materiel"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-031",
+   "texte": "les imprimantes du 3e ne repondent plus",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Materiel"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-032",
+   "texte": "mon ordinateur est devenu tres lent",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Performance"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-033",
+   "texte": "excel se fige des que j ouvre un gros fichier",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Performance",
+    "Logiciel"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-034",
+   "texte": "mon poste rame enormement depuis la derniere mise a jour",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Performance"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-035",
+   "texte": "tout est lent sur mon pc aujourd hui",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Performance"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-036",
+   "texte": "le ventilateur tourne a fond et le pc est lent",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Performance"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-037",
+   "texte": "word plante a chaque ouverture",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Logiciel"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-038",
+   "texte": "l application de gestion affiche une erreur 500",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Logiciel",
+    "Web / Intranet"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-039",
+   "texte": "je n arrive pas a installer la mise a jour du logiciel de devis",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Logiciel"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-040",
+   "texte": "le programme de paie ne demarre plus",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Logiciel"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-041",
+   "texte": "message d erreur au lancement d acrobat",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Logiciel"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-042",
+   "texte": "les applis se ferment toutes seules",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Logiciel"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-043",
+   "texte": "teams ne trouve pas mon micro",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Collaboration",
+    "Materiel"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-044",
+   "texte": "personne ne m entend en visio",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Collaboration"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-045",
+   "texte": "le partage d ecran ne fonctionne pas sur zoom",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Collaboration"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-046",
+   "texte": "ma camera reste noire dans teams",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Collaboration",
+    "Materiel"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-047",
+   "texte": "je n arrive pas a rejoindre la reunion en ligne",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Collaboration"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-048",
+   "texte": "l intranet ne charge pas",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Web / Intranet"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-049",
+   "texte": "chrome affiche une page blanche sur tous les sites",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Web / Intranet"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-050",
+   "texte": "edge me demande d accepter les cookies en boucle",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Web / Intranet"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-051",
+   "texte": "le portail rh ne s ouvre pas dans firefox",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Web / Intranet"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-052",
+   "texte": "mon telephone fixe n a plus de tonalite",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Telephonie"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-053",
+   "texte": "le softphone ne sonne plus",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Telephonie"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-054",
+   "texte": "je ne peux plus passer d appels depuis mon mobile pro",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Telephonie"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-055",
+   "texte": "mon smartphone de service ne se connecte plus au reseau mobile",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Telephonie",
+    "Reseau"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-056",
+   "texte": "j ai clique sur un lien dans un mail bizarre et maintenant tout est chiffre",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Securite"
+   ],
+   "critique": true,
+   "source": "dev"
+  },
+  {
+   "id": "D-057",
+   "texte": "quelqu un a utilise mon compte pendant mes vacances",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Securite"
+   ],
+   "critique": true,
+   "source": "dev"
+  },
+  {
+   "id": "D-058",
+   "texte": "l antivirus a trouve un cheval de troie",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Securite"
+   ],
+   "critique": true,
+   "source": "dev"
+  },
+  {
+   "id": "D-059",
+   "texte": "un collegue a recu un sms qui demande mes identifiants",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Securite"
+   ],
+   "critique": true,
+   "source": "dev"
+  },
+  {
+   "id": "D-060",
+   "texte": "mon ordinateur portable a ete vole ce week end",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Securite"
+   ],
+   "critique": true,
+   "source": "dev"
+  },
+  {
+   "id": "D-061",
+   "texte": "je recois des mails d arnaque au president",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Securite"
+   ],
+   "critique": true,
+   "source": "dev"
+  },
+  {
+   "id": "D-062",
+   "texte": "on m a piratee, mes contacts recoivent des mails de moi",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Securite"
+   ],
+   "critique": true,
+   "source": "dev"
+  },
+  {
+   "id": "D-063",
+   "texte": "un faux site de la banque me demande mon mot de passe",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Securite"
+   ],
+   "critique": true,
+   "source": "dev"
+  },
+  {
+   "id": "D-064",
+   "texte": "plus personne ne peut travailler, le serveur ne repond plus",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Infrastructure"
+   ],
+   "critique": true,
+   "source": "dev"
+  },
+  {
+   "id": "D-065",
+   "texte": "coupure generale du reseau dans tout le batiment",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Infrastructure",
+    "Reseau"
+   ],
+   "critique": true,
+   "source": "dev"
+  },
+  {
+   "id": "D-066",
+   "texte": "la base de production est indisponible pour tous les clients",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Infrastructure"
+   ],
+   "critique": true,
+   "source": "dev"
+  },
+  {
+   "id": "D-067",
+   "texte": "tout le service est bloque, l erp est down",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Infrastructure"
+   ],
+   "critique": true,
+   "source": "dev"
+  },
+  {
+   "id": "D-068",
+   "texte": "panne electrique dans la salle serveur",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Infrastructure"
+   ],
+   "critique": true,
+   "source": "dev"
+  },
+  {
+   "id": "D-069",
+   "texte": "j ai supprime par erreur le dossier de l appel d offres",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Donnees"
+   ],
+   "critique": true,
+   "source": "dev"
+  },
+  {
+   "id": "D-070",
+   "texte": "le fichier excel est corrompu et je n ai pas de sauvegarde",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Donnees"
+   ],
+   "critique": true,
+   "source": "dev"
+  },
+  {
+   "id": "D-071",
+   "texte": "tous mes documents ont disparu du lecteur partage",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Donnees"
+   ],
+   "critique": true,
+   "source": "dev"
+  },
+  {
+   "id": "D-072",
+   "texte": "comment recuperer un mail efface definitivement",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Donnees",
+    "Messagerie"
+   ],
+   "critique": true,
+   "source": "dev"
+  },
+  {
+   "id": "D-073",
+   "texte": "mon disque dur fait un bruit bizarre et des fichiers sont illisibles",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Donnees",
+    "Materiel"
+   ],
+   "critique": true,
+   "source": "dev"
+  },
+  {
+   "id": "D-074",
+   "texte": "je voudrais commander une nouvelle chaise",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Inconnu"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-075",
+   "texte": "a quelle heure ferme le parking",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Inconnu"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-076",
+   "texte": "mon badge ne passe plus a l entree",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Inconnu"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-077",
+   "texte": "je souhaite poser un jour de teletravail",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Inconnu"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-078",
+   "texte": "il n y a plus de gobelets a la machine a cafe",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Inconnu"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-079",
+   "texte": "comment faire une note de frais",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Inconnu"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-080",
+   "texte": "je voudrais une formation powerpoint",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Inconnu"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-081",
+   "texte": "la climatisation est en panne au 2e etage",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Inconnu"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-082",
+   "texte": "quel est le numero de la medecine du travail",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Inconnu"
+   ],
+   "critique": false,
+   "source": "dev"
+  },
+  {
+   "id": "D-083",
+   "texte": "pouvez vous changer la photo de mon profil sur l annuaire",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Inconnu"
+   ],
+   "critique": false,
+   "source": "dev"
+  }
+ ]
+}

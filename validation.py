@@ -33,65 +33,18 @@ Lancement :  python validation.py
 
 import soveris
 
-# Chaque entree : (texte utilisateur, decision attendue,
-#                  categories acceptees si resolution, escalade critique ?)
-JEU_VALIDATION = [
-    # ---- Incidents courants : resolution automatique attendue (32) ----
-    ("le wifi coupe sans arret dans la salle de reunion", "RESOLUTION_AUTO", ("Reseau",), False),
-    ("impossible de me connecter a internet ce matin", "RESOLUTION_AUTO", ("Reseau",), False),
-    ("mon mot de passe ne marche plus", "RESOLUTION_AUTO", ("Compte / Acces",), False),
-    ("compte bloque apres plusieurs essais", "RESOLUTION_AUTO", ("Compte / Acces",), False),
-    ("je ne recois plus mes emails depuis hier", "RESOLUTION_AUTO", ("Messagerie",), False),
-    ("outlook plante au demarrage", "RESOLUTION_AUTO", ("Messagerie", "Logiciel"), False),
-    ("l imprimante affiche plus de toner", "RESOLUTION_AUTO", ("Materiel",), False),
-    ("bourrage papier au troisieme etage", "RESOLUTION_AUTO", ("Materiel",), False),
-    ("mon pc est super lent depuis la mise a jour", "RESOLUTION_AUTO", ("Performance",), False),
-    ("tout rame quand j ouvre plusieurs fenetres", "RESOLUTION_AUTO", ("Performance",), False),
-    ("le vpn refuse de se connecter depuis chez moi", "RESOLUTION_AUTO", ("Reseau",), False),
-    ("acces refuse au lecteur reseau commun", "RESOLUTION_AUTO", ("Compte / Acces", "Reseau"), False),
-    ("je n ai plus acces au dossier du service compta", "RESOLUTION_AUTO", ("Compte / Acces",), False),
-    ("ma souris ne repond plus", "RESOLUTION_AUTO", ("Materiel",), False),
-    ("ecran noir au demarrage du poste", "RESOLUTION_AUTO", ("Materiel",), False),
-    ("le clavier tape des caracteres bizarres", "RESOLUTION_AUTO", ("Materiel",), False),
-    ("mon casque n est pas detecte en visio", "RESOLUTION_AUTO", ("Materiel", "Collaboration"), False),
-    ("teams ne veut pas partager mon ecran", "RESOLUTION_AUTO", ("Collaboration", "Materiel"), False),
-    ("le micro ne marche pas pendant les reunions zoom", "RESOLUTION_AUTO", ("Collaboration",), False),
-    ("impossible d ouvrir l application de compta", "RESOLUTION_AUTO", ("Logiciel",), False),
-    ("le logiciel de paie affiche une erreur au lancement", "RESOLUTION_AUTO", ("Logiciel",), False),
-    ("je dois installer un programme mais ca echoue", "RESOLUTION_AUTO", ("Logiciel",), False),
-    ("chrome ne charge aucune page", "RESOLUTION_AUTO", ("Web / Intranet",), False),
-    ("l intranet est inaccessible depuis mon poste", "RESOLUTION_AUTO", ("Web / Intranet",), False),
-    ("le site de l entreprise ne s affiche pas", "RESOLUTION_AUTO", ("Web / Intranet",), False),
-    ("mon telephone pro ne recoit plus d appels", "RESOLUTION_AUTO", ("Telephonie",), False),
-    ("la carte sim n est pas reconnue", "RESOLUTION_AUTO", ("Telephonie",), False),
-    ("le portable de service ne s allume plus", "RESOLUTION_AUTO", ("Telephonie", "Materiel"), False),
-    ("je n arrive pas a me connecter o wifi", "RESOLUTION_AUTO", ("Reseau",), False),
-    ("ma boite est pleine je ne peux plus recevoir de courrier", "RESOLUTION_AUTO", ("Messagerie",), False),
-    ("session windows verrouillee impossible de rentrer", "RESOLUTION_AUTO", ("Compte / Acces",), False),
-    ("mon ordi est mort", "RESOLUTION_AUTO", ("Materiel", "Performance"), False),
+# Le jeu est GELE dans data/test_gele.json (protege par empreinte).
+# JEU_VALIDATION conserve l'ancien format (tuple) pour compatibilite.
+import json
+import os
 
-    # ---- Cas sensibles : escalade attendue, erreur = DANGEREUSE (10) ----
-    ("je crois que j ai un virus sur mon poste", "ESCALADE", ("Securite",), True),
-    ("un mail bizarre me demande mes identifiants", "ESCALADE", ("Securite",), True),
-    ("on m a vole mon ordinateur portable dans le train", "ESCALADE", ("Securite",), True),
-    ("ransomware detecte par l antivirus", "ESCALADE", ("Securite",), True),
-    ("plus personne n arrive a se connecter au serveur", "ESCALADE", ("Infrastructure",), True),
-    ("la prod est tombee tout le monde est bloque", "ESCALADE", ("Infrastructure",), True),
-    ("j ai efface un dossier partage par erreur", "ESCALADE", ("Donnees",), True),
-    ("fichier client corrompu impossible a ouvrir", "ESCALADE", ("Donnees",), True),
-    ("je pense que mon compte a ete pirate", "ESCALADE", ("Securite",), True),
-    ("le serveur de fichiers est indisponible", "ESCALADE", ("Infrastructure",), True),
+_CHEMIN_JEU = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "test_gele.json")
 
-    # ---- Hors perimetre : escalade attendue (qualification humaine) (8) ----
-    ("ou se trouve la machine a cafe", "ESCALADE", ("Inconnu",), False),
-    ("je veux poser mes conges la semaine prochaine", "ESCALADE", ("Inconnu",), False),
-    ("le badge de la porte ne fonctionne plus", "ESCALADE", ("Inconnu",), False),
-    ("quelle est la date de la prochaine reunion d equipe", "ESCALADE", ("Inconnu",), False),
-    ("ma chaise de bureau est cassee", "ESCALADE", ("Inconnu",), False),
-    ("comment changer ma photo sur l intranet", "ESCALADE", ("Inconnu",), False),
-    ("il fait trop chaud dans l open space", "ESCALADE", ("Inconnu",), False),
-    ("besoin d une formation sur excel", "ESCALADE", ("Inconnu",), False),
-]
+with open(_CHEMIN_JEU, encoding="utf-8") as _f:
+    JEU_VALIDATION = [
+        (c["texte"], c["attendu"], tuple(c["categories"]), c["critique"])
+        for c in json.load(_f)["cas"]
+    ]
 
 
 def evaluer():

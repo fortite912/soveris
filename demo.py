@@ -163,7 +163,7 @@ def mode_automatique():
     banniere()
     print(c(f"\n### DEMONSTRATION AUTOMATIQUE - {len(TICKETS_DEMO)} tickets representatifs ###\n", GRAS))
     for i, texte in enumerate(TICKETS_DEMO, start=1):
-        resultat = soveris.analyser(texte)
+        resultat = soveris.traiter(texte)
         database.enregistrer(resultat)
         afficher_resultat(i, resultat)
         # Courte pause pour rendre la demonstration lisible en direct
@@ -191,7 +191,7 @@ def mode_interactif():
             # Entree a vide (fausse manipulation) : on redemande,
             # on ne quitte pas la demonstration.
             continue
-        resultat = soveris.analyser(texte)
+        resultat = soveris.traiter(texte)
         database.enregistrer(resultat)
         afficher_resultat(numero, resultat)
         numero += 1

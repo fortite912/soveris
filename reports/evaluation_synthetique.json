@@ -1,0 +1,481 @@
+{
+ "jeu": "synthetique",
+ "horodatage": "2026-11-04T13:32:13",
+ "total": 204,
+ "corrects": 204,
+ "precision": 100.0,
+ "verdicts": {
+  "CORRECT": 204
+ },
+ "erreurs_critiques": 0,
+ "critiques_mal_orientees": 0,
+ "incertains": 48,
+ "latence_ms": {
+  "mediane": 0.706,
+  "p95": 1.003,
+  "max": 1.073,
+  "total_jeu": 153.5
+ },
+ "par_classe": {
+  "Reseau": {
+   "total": 18,
+   "corrects": 18,
+   "erreurs": [],
+   "precision": 100.0
+  },
+  "Compte / Acces": {
+   "total": 18,
+   "corrects": 18,
+   "erreurs": [],
+   "precision": 100.0
+  },
+  "Messagerie": {
+   "total": 12,
+   "corrects": 12,
+   "erreurs": [],
+   "precision": 100.0
+  },
+  "Materiel": {
+   "total": 24,
+   "corrects": 24,
+   "erreurs": [],
+   "precision": 100.0
+  },
+  "Performance": {
+   "total": 12,
+   "corrects": 12,
+   "erreurs": [],
+   "precision": 100.0
+  },
+  "Logiciel": {
+   "total": 12,
+   "corrects": 12,
+   "erreurs": [],
+   "precision": 100.0
+  },
+  "Collaboration": {
+   "total": 12,
+   "corrects": 12,
+   "erreurs": [],
+   "precision": 100.0
+  },
+  "Web / Intranet": {
+   "total": 12,
+   "corrects": 12,
+   "erreurs": [],
+   "precision": 100.0
+  },
+  "Telephonie": {
+   "total": 12,
+   "corrects": 12,
+   "erreurs": [],
+   "precision": 100.0
+  },
+  "Securite": {
+   "total": 24,
+   "corrects": 24,
+   "erreurs": [],
+   "precision": 100.0
+  },
+  "Infrastructure": {
+   "total": 12,
+   "corrects": 12,
+   "erreurs": [],
+   "precision": 100.0
+  },
+  "Donnees": {
+   "total": 12,
+   "corrects": 12,
+   "erreurs": [],
+   "precision": 100.0
+  },
+  "Inconnu": {
+   "total": 24,
+   "corrects": 24,
+   "erreurs": [],
+   "precision": 100.0
+  }
+ },
+ "matrice_confusion": {
+  "Reseau": {
+   "Reseau": 18
+  },
+  "Compte / Acces": {
+   "Compte / Acces": 18
+  },
+  "Messagerie": {
+   "Messagerie": 12
+  },
+  "Materiel": {
+   "Materiel": 24
+  },
+  "Performance": {
+   "Performance": 12
+  },
+  "Logiciel": {
+   "Logiciel": 12
+  },
+  "Collaboration": {
+   "Collaboration": 12
+  },
+  "Web / Intranet": {
+   "Web / Intranet": 12
+  },
+  "Telephonie": {
+   "Telephonie": 12
+  },
+  "Securite": {
+   "Securite": 24
+  },
+  "Infrastructure": {
+   "Infrastructure": 12
+  },
+  "Donnees": {
+   "Donnees": 12
+  },
+  "Inconnu": {
+   "Inconnu": 24
+  }
+ },
+ "details_critiques": [],
+ "details_critiques_mal_orientees": [],
+ "details_incertains": [
+  {
+   "id": "S-037",
+   "texte": "hello outlook ne s ouvre plus",
+   "obtenu": "RESOLUTION_AUTO / Messagerie",
+   "score": 1.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "S-038",
+   "texte": "depuis ce matin outlook ne s ouvre plus c est bloquant",
+   "obtenu": "RESOLUTION_AUTO / Messagerie",
+   "score": 1.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "S-039",
+   "texte": "bonjour, outlook ne s ouvre plus au 2e etage",
+   "obtenu": "RESOLUTION_AUTO / Messagerie",
+   "score": 1.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "S-040",
+   "texte": "bonjour, outlook ne s ouvre plus pouvez vous m aider",
+   "obtenu": "RESOLUTION_AUTO / Messagerie",
+   "score": 1.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "S-041",
+   "texte": "urgent : outlook ne s ouvre plus pouvez vous m aider",
+   "obtenu": "RESOLUTION_AUTO / Messagerie",
+   "score": 1.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "S-042",
+   "texte": "outlook ne s ouvre plus pouvez vous m aider",
+   "obtenu": "RESOLUTION_AUTO / Messagerie",
+   "score": 1.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "S-133",
+   "texte": "depuis ce matin j ai recu un mail de phishing",
+   "obtenu": "ESCALADE / Securite",
+   "score": 1.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "S-134",
+   "texte": "bonjour, j ai recu un mail de phishing !!!",
+   "obtenu": "ESCALADE / Securite",
+   "score": 1.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "S-135",
+   "texte": "re-bonjour, j ai recu un mail de phishing depuis hier",
+   "obtenu": "ESCALADE / Securite",
+   "score": 1.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "S-136",
+   "texte": "re-bonjour, j ai recu un mail de phishing c est bloquant",
+   "obtenu": "ESCALADE / Securite",
+   "score": 1.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "S-137",
+   "texte": "j ai recu un mail de phishing merci",
+   "obtenu": "ESCALADE / Securite",
+   "score": 1.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "S-138",
+   "texte": "j ai recu un mail de phishing c est bloquant",
+   "obtenu": "ESCALADE / Securite",
+   "score": 1.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "S-151",
+   "texte": "re-bonjour, on m a vole mon portable merci",
+   "obtenu": "ESCALADE / Securite",
+   "score": 1.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "S-152",
+   "texte": "depuis ce matin on m a vole mon portable au 2e etage",
+   "obtenu": "ESCALADE / Securite",
+   "score": 1.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "S-153",
+   "texte": "svp on m a vole mon portable",
+   "obtenu": "ESCALADE / Securite",
+   "score": 1.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "S-154",
+   "texte": "on m a vole mon portable",
+   "obtenu": "ESCALADE / Securite",
+   "score": 1.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "S-155",
+   "texte": "urgent : on m a vole mon portable !!!",
+   "obtenu": "ESCALADE / Securite",
+   "score": 1.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "S-156",
+   "texte": "bonjour, on m a vole mon portable",
+   "obtenu": "ESCALADE / Securite",
+   "score": 1.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "S-175",
+   "texte": "svp le fichier est corrompu merci",
+   "obtenu": "ESCALADE / Donnees",
+   "score": 1.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "S-176",
+   "texte": "re-bonjour, le fichier est corrompu depuis hier",
+   "obtenu": "ESCALADE / Donnees",
+   "score": 1.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "S-177",
+   "texte": "svp le fichier est corrompu c est bloquant",
+   "obtenu": "ESCALADE / Donnees",
+   "score": 1.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "S-178",
+   "texte": "bonjour, le fichier est corrompu merci",
+   "obtenu": "ESCALADE / Donnees",
+   "score": 1.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "S-179",
+   "texte": "bonjour, le fichier est corrompu au 2e etage",
+   "obtenu": "ESCALADE / Donnees",
+   "score": 1.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "S-180",
+   "texte": "hello le fichier est corrompu au 2e etage",
+   "obtenu": "ESCALADE / Donnees",
+   "score": 1.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "S-181",
+   "texte": "urgent : ou est la machine a cafe pouvez vous m aider",
+   "obtenu": "ESCALADE / Inconnu",
+   "score": 0.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "S-182",
+   "texte": "bonjour, ou est la machine a cafe c est bloquant",
+   "obtenu": "ESCALADE / Inconnu",
+   "score": 0.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "S-183",
+   "texte": "re-bonjour, ou est la machine a cafe pouvez vous m aider",
+   "obtenu": "ESCALADE / Inconnu",
+   "score": 0.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "S-184",
+   "texte": "re-bonjour, ou est la machine a cafe merci",
+   "obtenu": "ESCALADE / Inconnu",
+   "score": 0.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "S-185",
+   "texte": "ou est la machine a cafe",
+   "obtenu": "ESCALADE / Inconnu",
+   "score": 0.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "S-186",
+   "texte": "svp ou est la machine a cafe c est bloquant",
+   "obtenu": "ESCALADE / Inconnu",
+   "score": 0.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "S-187",
+   "texte": "depuis ce matin je veux poser des conges pouvez vous m aider",
+   "obtenu": "ESCALADE / Inconnu",
+   "score": 0.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "S-188",
+   "texte": "re-bonjour, je veux poser des conges c est bloquant",
+   "obtenu": "ESCALADE / Inconnu",
+   "score": 0.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "S-189",
+   "texte": "je veux poser des conges !!!",
+   "obtenu": "ESCALADE / Inconnu",
+   "score": 0.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "S-190",
+   "texte": "bonjour, je veux poser des conges",
+   "obtenu": "ESCALADE / Inconnu",
+   "score": 0.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "S-191",
+   "texte": "hello je veux poser des conges au 2e etage",
+   "obtenu": "ESCALADE / Inconnu",
+   "score": 0.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "S-192",
+   "texte": "depuis ce matin je veux poser des conges merci",
+   "obtenu": "ESCALADE / Inconnu",
+   "score": 0.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "S-193",
+   "texte": "depuis ce matin ma chaise est cassee !!!",
+   "obtenu": "ESCALADE / Inconnu",
+   "score": 0.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "S-194",
+   "texte": "ma chaise est cassee c est bloquant",
+   "obtenu": "ESCALADE / Inconnu",
+   "score": 0.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "S-195",
+   "texte": "urgent : ma chaise est cassee pouvez vous m aider",
+   "obtenu": "ESCALADE / Inconnu",
+   "score": 0.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "S-196",
+   "texte": "svp ma chaise est cassee !!!",
+   "obtenu": "ESCALADE / Inconnu",
+   "score": 0.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "S-197",
+   "texte": "ma chaise est cassee merci",
+   "obtenu": "ESCALADE / Inconnu",
+   "score": 0.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "S-198",
+   "texte": "urgent : ma chaise est cassee au 2e etage",
+   "obtenu": "ESCALADE / Inconnu",
+   "score": 0.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "S-199",
+   "texte": "urgent : besoin d une formation depuis hier",
+   "obtenu": "ESCALADE / Inconnu",
+   "score": 0.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "S-200",
+   "texte": "re-bonjour, besoin d une formation c est bloquant",
+   "obtenu": "ESCALADE / Inconnu",
+   "score": 0.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "S-201",
+   "texte": "besoin d une formation depuis hier",
+   "obtenu": "ESCALADE / Inconnu",
+   "score": 0.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "S-202",
+   "texte": "re-bonjour, besoin d une formation pouvez vous m aider",
+   "obtenu": "ESCALADE / Inconnu",
+   "score": 0.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "S-203",
+   "texte": "bonjour, besoin d une formation !!!",
+   "obtenu": "ESCALADE / Inconnu",
+   "score": 0.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "S-204",
+   "texte": "urgent : besoin d une formation au 2e etage",
+   "obtenu": "ESCALADE / Inconnu",
+   "score": 0.0,
+   "verdict": "CORRECT"
+  }
+ ],
+ "erreurs": []
+}

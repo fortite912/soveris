@@ -1,0 +1,8 @@
+{
+ "seuil_confiance": 1.0,
+ "seuil_revue": 1.0,
+ "tolerance_pluriel": true,
+ "poids_partage": false,
+ "poids_multimot": 1.0,
+ "marge_n2": 1.0
+}

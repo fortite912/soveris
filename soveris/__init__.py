@@ -29,12 +29,15 @@ Aucune librairie externe : tout est en Python standard.
 import re
 import time
 import unicodedata
-from connaissances import BASE_CONNAISSANCES
+from collections import Counter
 
-# Seuil de confiance : nombre minimum de mots-cles qui doivent
-# correspondre pour que l'agent ose proposer une solution automatique.
-# En dessous, par prudence, on escalade vers un humain.
-SEUIL_CONFIANCE = 1
+from connaissances import BASE_CONNAISSANCES
+from .parametres import PARAMETRES
+
+# Seuil de confiance : score pondere minimum pour que l'agent ose proposer
+# une solution automatique. En dessous, par prudence, on escalade.
+# (Alias historique ; la valeur vivante est PARAMETRES["seuil_confiance"].)
+SEUIL_CONFIANCE = PARAMETRES["seuil_confiance"]
 
 
 def normaliser(texte):
@@ -49,13 +52,43 @@ def normaliser(texte):
     # Decompose les caracteres accentues puis retire les accents
     texte = unicodedata.normalize("NFKD", texte)
     texte = "".join(c for c in texte if not unicodedata.combining(c))
-    return texte
+    # Apostrophes et traits d'union deviennent des espaces : "partage d'ecran",
+    # "partage d ecran" et "wi-fi" / "wi fi" sont alors identiques.
+    texte = re.sub(r"[\u2019'`\-]+", " ", texte)
+    return re.sub(r"\s+", " ", texte).strip()
 
 
-def scorer_article(texte_ticket, article):
+# Nombre d'articles dans lesquels chaque mot-cle (normalise) apparait.
+# Un mot partage par plusieurs articles ("acces", "connexion", "serveur")
+# est moins discriminant qu'un mot propre a un seul article.
+_FREQUENCE_MOTS = Counter(
+    normaliser(mot) for article in BASE_CONNAISSANCES for mot in set(article["mots_cles"])
+)
+
+
+def poids_mot(mot_cle, parametres=None):
+    """Poids d'un mot-cle selon les parametres (1.0 par defaut, comportement historique)."""
+    p = parametres or PARAMETRES
+    poids = 1.0
+    if p["poids_partage"]:
+        poids /= _FREQUENCE_MOTS.get(normaliser(mot_cle), 1)
+    if " " in mot_cle.strip():
+        poids *= p["poids_multimot"]
+    return poids
+
+
+def motif_mot(mot_cle, parametres=None):
+    """Expression reguliere d'un mot-cle (frontiere de mot, pluriel optionnel)."""
+    p = parametres or PARAMETRES
+    suffixe = r"(?:s|x)?" if p["tolerance_pluriel"] else ""
+    return r"\b" + re.escape(normaliser(mot_cle)) + suffixe + r"\b"
+
+
+def scorer_article(texte_ticket, article, parametres=None):
     """
     Calcule le score d'un article face a la demande de l'utilisateur.
-    Le score = nombre de mots-cles de l'article presents dans le ticket.
+    Le score = somme des poids des mots-cles de l'article presents dans
+    le ticket (tous les poids valent 1 avec les parametres historiques).
 
     La recherche se fait par FRONTIERE DE MOT (\\b en regex) :
     le mot-cle "mot" est reconnu dans "mot de passe" mais PAS dans
@@ -67,11 +100,18 @@ def scorer_article(texte_ticket, article):
     """
     texte_normalise = normaliser(texte_ticket)
     mots_trouves = []
+    score = 0.0
+    occupes = []  # portions du texte deja comptees : un meme mot du ticket
+    #              ne peut pas valoir deux fois ("mail" et "mails" sur "mails")
     for mot_cle in article["mots_cles"]:
-        motif = r"\b" + re.escape(normaliser(mot_cle)) + r"\b"
-        if re.search(motif, texte_normalise):
+        for m in re.finditer(motif_mot(mot_cle, parametres), texte_normalise):
+            if any(m.start() < fin and m.end() > debut for debut, fin in occupes):
+                continue
+            occupes.append((m.start(), m.end()))
             mots_trouves.append(mot_cle)
-    return len(mots_trouves), mots_trouves
+            score += poids_mot(mot_cle, parametres)
+            break
+    return round(score, 3), mots_trouves
 
 
 def niveau_confiance(score):
@@ -80,16 +120,16 @@ def niveau_confiance(score):
     Sert uniquement a l'affichage et au reporting : la DECISION,
     elle, reste regie par SEUIL_CONFIANCE et le niveau N1/N2.
     """
-    if score >= 3:
+    if score >= 2.5:
         return "TRES HAUTE"
-    if score == 2:
+    if score >= 1.5:
         return "HAUTE"
-    if score == 1:
+    if score > 0:
         return "MOYENNE"
     return "NULLE"
 
 
-def analyser(texte_ticket):
+def analyser(texte_ticket, parametres=None):
     """
     Fonction principale de l'agent.
     Prend un ticket en langage naturel et renvoie un resultat structure.
@@ -103,29 +143,36 @@ def analyser(texte_ticket):
     Renvoie un dictionnaire avec toute la "tracabilite" de la decision,
     y compris le temps de traitement en millisecondes.
     """
+    p = parametres or PARAMETRES
     depart = time.perf_counter()
 
-    # --- Etape 1 : scorer tous les articles ---
-    meilleur_article = None
-    meilleur_score = 0
-    meilleurs_mots = []
+    # --- Etape 1 : scorer tous les articles, meilleur N1 et meilleur N2 a part ---
+    meilleurs = {"N1": (0.0, None, []), "N2": (0.0, None, [])}  # score, article, mots
+    candidats = []  # (score, categorie) de tous les articles reconnus
 
     for article in BASE_CONNAISSANCES:
-        score, mots = scorer_article(texte_ticket, article)
+        score, mots = scorer_article(texte_ticket, article, p)
         if score == 0:
             continue
-        gagne = score > meilleur_score
-        # Egalite de score : la prudence l'emporte (N2 > N1).
-        egalite_prudente = (
-            score == meilleur_score
-            and meilleur_article is not None
-            and article["niveau"] == "N2"
-            and meilleur_article["niveau"] == "N1"
-        )
-        if gagne or egalite_prudente:
-            meilleur_score = score
-            meilleur_article = article
-            meilleurs_mots = mots
+        candidats.append((score, article["categorie"]))
+        if score > meilleurs[article["niveau"]][0]:
+            meilleurs[article["niveau"]] = (score, article, mots)
+
+    # --- Etape 2 : arbitrage N1 / N2 ---
+    # La prudence l'emporte : le N2 gagne a egalite, et meme s'il est a moins
+    # de `marge_n2` point(s) du meilleur N1 (0 = egalite stricte seulement).
+    score_n1, article_n1, mots_n1 = meilleurs["N1"]
+    score_n2, article_n2, mots_n2 = meilleurs["N2"]
+    if article_n2 is not None and score_n2 >= score_n1 - p["marge_n2"]:
+        meilleur_score, meilleur_article, meilleurs_mots = score_n2, article_n2, mots_n2
+    else:
+        meilleur_score, meilleur_article, meilleurs_mots = score_n1, article_n1, mots_n1
+
+    # Ambiguite : un autre article d'une AUTRE categorie fait le meme score.
+    ambigu = any(
+        s == meilleur_score and meilleur_article is not None and cat != meilleur_article["categorie"]
+        for s, cat in candidats
+    )
 
     temps_ms = (time.perf_counter() - depart) * 1000
 
@@ -134,6 +181,7 @@ def analyser(texte_ticket):
         "score": meilleur_score,
         "mots_reconnus": meilleurs_mots,
         "confiance": niveau_confiance(meilleur_score),
+        "ambigu": ambigu,
         "temps_ms": round(temps_ms, 3),
     }
 
@@ -163,7 +211,7 @@ def analyser(texte_ticket):
         }
 
     # Cas C : niveau N1 mais confiance trop faible -> escalade par prudence.
-    if meilleur_score < SEUIL_CONFIANCE:
+    if meilleur_score < p["seuil_confiance"]:
         return {
             **base,
             "categorie": meilleur_article["categorie"],
@@ -186,7 +234,37 @@ def analyser(texte_ticket):
     }
 
 
-# Permet de tester ce fichier seul : python soveris.py
+def est_incertain(resultat):
+    """
+    Une decision est "incertaine" (a revoir par un humain) si :
+      - aucun mot-cle n'a ete reconnu (categorie Inconnu), ou
+      - le score est strictement inferieur a PARAMETRES["seuil_revue"], ou
+      - deux articles de categories differentes sont a egalite (ambigu).
+    Sert au journal (file "a revoir") et au diagnostic ; ne change pas la decision.
+    """
+    return (
+        resultat["categorie"] == "Inconnu"
+        or resultat["score"] < PARAMETRES["seuil_revue"]
+        or resultat.get("ambigu", False)
+    )
+
+
+def traiter(texte_ticket):
+    """
+    Analyse ET journalise (usage "production" : demo, web).
+    analyser() reste pure pour l'evaluation ; traiter() ajoute le journal local
+    des decisions (sans donnee personnelle) et la file "a revoir".
+    """
+    from . import journal  # import local : le journal n'est charge qu'en usage reel
+    resultat = analyser(texte_ticket)
+    try:
+        journal.consigner(resultat, est_incertain(resultat))
+    except OSError:
+        pass  # le journal ne doit jamais faire echouer le traitement
+    return resultat
+
+
+# Permet de tester ce module seul : python -m soveris demo
 if __name__ == "__main__":
     exemples = [
         "Je n'arrive plus a me connecter au wifi",

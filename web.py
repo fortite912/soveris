@@ -11,7 +11,7 @@ Fidele au positionnement du projet :
   - 100 % Python standard (http.server) : AUCUNE dependance externe.
   - Serveur lie a 127.0.0.1 uniquement : rien n'est expose au reseau,
     aucune donnee ne quitte la machine (souverainete).
-  - Le moteur (soveris.py) et la persistance (database.py) sont
+  - Le moteur (paquet soveris/) et la persistance (database.py) sont
     strictement inchanges : l'interface n'est qu'une vitrine.
 
 Lancement :
@@ -293,7 +293,7 @@ class Poignee(BaseHTTPRequestHandler):
         if not texte:
             self._envoyer(400, json.dumps({"erreur": "texte vide"}))
             return
-        resultat = soveris.analyser(texte)
+        resultat = soveris.traiter(texte)
         database.enregistrer(resultat)
         self._envoyer(200, json.dumps(resultat, ensure_ascii=False))
 

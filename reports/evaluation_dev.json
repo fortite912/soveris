@@ -1,0 +1,369 @@
+{
+ "jeu": "dev",
+ "horodatage": "2026-11-04T13:32:13",
+ "total": 83,
+ "corrects": 82,
+ "precision": 98.8,
+ "verdicts": {
+  "CORRECT": 82,
+  "MAL_CATEGORISE": 1
+ },
+ "erreurs_critiques": 0,
+ "critiques_mal_orientees": 1,
+ "incertains": 24,
+ "latence_ms": {
+  "mediane": 0.764,
+  "p95": 0.966,
+  "max": 1.13,
+  "total_jeu": 64.0
+ },
+ "par_classe": {
+  "Reseau": {
+   "total": 7,
+   "corrects": 7,
+   "erreurs": [],
+   "precision": 100.0
+  },
+  "Compte / Acces": {
+   "total": 8,
+   "corrects": 8,
+   "erreurs": [],
+   "precision": 100.0
+  },
+  "Messagerie": {
+   "total": 6,
+   "corrects": 6,
+   "erreurs": [],
+   "precision": 100.0
+  },
+  "Materiel": {
+   "total": 10,
+   "corrects": 10,
+   "erreurs": [],
+   "precision": 100.0
+  },
+  "Performance": {
+   "total": 5,
+   "corrects": 5,
+   "erreurs": [],
+   "precision": 100.0
+  },
+  "Logiciel": {
+   "total": 6,
+   "corrects": 6,
+   "erreurs": [],
+   "precision": 100.0
+  },
+  "Collaboration": {
+   "total": 5,
+   "corrects": 5,
+   "erreurs": [],
+   "precision": 100.0
+  },
+  "Web / Intranet": {
+   "total": 4,
+   "corrects": 3,
+   "erreurs": [
+    {
+     "id": "D-051",
+     "texte": "le portail rh ne s ouvre pas dans firefox",
+     "verdict": "MAL_CATEGORISE",
+     "obtenu": "RESOLUTION_AUTO / Logiciel"
+    }
+   ],
+   "precision": 75.0
+  },
+  "Telephonie": {
+   "total": 4,
+   "corrects": 4,
+   "erreurs": [],
+   "precision": 100.0
+  },
+  "Securite": {
+   "total": 8,
+   "corrects": 8,
+   "erreurs": [],
+   "precision": 100.0
+  },
+  "Infrastructure": {
+   "total": 5,
+   "corrects": 5,
+   "erreurs": [],
+   "precision": 100.0
+  },
+  "Donnees": {
+   "total": 5,
+   "corrects": 5,
+   "erreurs": [],
+   "precision": 100.0
+  },
+  "Inconnu": {
+   "total": 10,
+   "corrects": 10,
+   "erreurs": [],
+   "precision": 100.0
+  }
+ },
+ "matrice_confusion": {
+  "Reseau": {
+   "Reseau": 7
+  },
+  "Compte / Acces": {
+   "Compte / Acces": 7,
+   "Reseau": 1
+  },
+  "Messagerie": {
+   "Messagerie": 6
+  },
+  "Materiel": {
+   "Materiel": 10
+  },
+  "Performance": {
+   "Performance": 5
+  },
+  "Logiciel": {
+   "Logiciel": 6
+  },
+  "Collaboration": {
+   "Collaboration": 5
+  },
+  "Web / Intranet": {
+   "Web / Intranet": 3,
+   "Logiciel": 1
+  },
+  "Telephonie": {
+   "Telephonie": 4
+  },
+  "Securite": {
+   "Securite": 7,
+   "Inconnu": 1
+  },
+  "Infrastructure": {
+   "Infrastructure": 5
+  },
+  "Donnees": {
+   "Donnees": 5
+  },
+  "Inconnu": {
+   "Inconnu": 9,
+   "Infrastructure": 1
+  }
+ },
+ "details_critiques": [],
+ "details_critiques_mal_orientees": [
+  {
+   "id": "D-057",
+   "texte": "quelqu un a utilise mon compte pendant mes vacances",
+   "source": "dev",
+   "attendu": "ESCALADE",
+   "categories_attendues": [
+    "Securite"
+   ],
+   "critique": true,
+   "decision": "ESCALADE",
+   "categorie": "Inconnu",
+   "score": 0.0,
+   "confiance": "NULLE",
+   "mots_reconnus": [],
+   "ambigu": false,
+   "incertain": true,
+   "verdict": "CORRECT",
+   "categorie_correcte": false,
+   "temps_ms": 0.787
+  }
+ ],
+ "details_incertains": [
+  {
+   "id": "D-004",
+   "texte": "le vpn se coupe des que je lance une visio en teletravail",
+   "obtenu": "RESOLUTION_AUTO / Reseau",
+   "score": 1.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-007",
+   "texte": "la connexion est tres instable en salle 204",
+   "obtenu": "RESOLUTION_AUTO / Reseau",
+   "score": 1.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-011",
+   "texte": "le mot de passe de ma messagerie a expire",
+   "obtenu": "RESOLUTION_AUTO / Compte / Acces",
+   "score": 1.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-013",
+   "texte": "le lecteur reseau P n apparait plus dans mon explorateur",
+   "obtenu": "RESOLUTION_AUTO / Reseau",
+   "score": 1.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-028",
+   "texte": "le clavier de mon portable a des touches qui ne repondent pas",
+   "obtenu": "RESOLUTION_AUTO / Materiel",
+   "score": 1.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-033",
+   "texte": "excel se fige des que j ouvre un gros fichier",
+   "obtenu": "RESOLUTION_AUTO / Performance",
+   "score": 1.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-051",
+   "texte": "le portail rh ne s ouvre pas dans firefox",
+   "obtenu": "RESOLUTION_AUTO / Logiciel",
+   "score": 1.0,
+   "verdict": "MAL_CATEGORISE"
+  },
+  {
+   "id": "D-056",
+   "texte": "j ai clique sur un lien dans un mail bizarre et maintenant tout est chiffre",
+   "obtenu": "ESCALADE / Securite",
+   "score": 1.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-057",
+   "texte": "quelqu un a utilise mon compte pendant mes vacances",
+   "obtenu": "ESCALADE / Inconnu",
+   "score": 0.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-059",
+   "texte": "un collegue a recu un sms qui demande mes identifiants",
+   "obtenu": "ESCALADE / Securite",
+   "score": 1.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-060",
+   "texte": "mon ordinateur portable a ete vole ce week end",
+   "obtenu": "ESCALADE / Securite",
+   "score": 1.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-061",
+   "texte": "je recois des mails d arnaque au president",
+   "obtenu": "ESCALADE / Securite",
+   "score": 1.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-062",
+   "texte": "on m a piratee, mes contacts recoivent des mails de moi",
+   "obtenu": "ESCALADE / Securite",
+   "score": 1.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-063",
+   "texte": "un faux site de la banque me demande mon mot de passe",
+   "obtenu": "ESCALADE / Securite",
+   "score": 1.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-073",
+   "texte": "mon disque dur fait un bruit bizarre et des fichiers sont illisibles",
+   "obtenu": "ESCALADE / Donnees",
+   "score": 1.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-074",
+   "texte": "je voudrais commander une nouvelle chaise",
+   "obtenu": "ESCALADE / Inconnu",
+   "score": 0.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-075",
+   "texte": "a quelle heure ferme le parking",
+   "obtenu": "ESCALADE / Inconnu",
+   "score": 0.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-076",
+   "texte": "mon badge ne passe plus a l entree",
+   "obtenu": "ESCALADE / Inconnu",
+   "score": 0.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-077",
+   "texte": "je souhaite poser un jour de teletravail",
+   "obtenu": "ESCALADE / Inconnu",
+   "score": 0.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-078",
+   "texte": "il n y a plus de gobelets a la machine a cafe",
+   "obtenu": "ESCALADE / Inconnu",
+   "score": 0.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-079",
+   "texte": "comment faire une note de frais",
+   "obtenu": "ESCALADE / Inconnu",
+   "score": 0.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-080",
+   "texte": "je voudrais une formation powerpoint",
+   "obtenu": "ESCALADE / Inconnu",
+   "score": 0.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-082",
+   "texte": "quel est le numero de la medecine du travail",
+   "obtenu": "ESCALADE / Inconnu",
+   "score": 0.0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-083",
+   "texte": "pouvez vous changer la photo de mon profil sur l annuaire",
+   "obtenu": "ESCALADE / Inconnu",
+   "score": 0.0,
+   "verdict": "CORRECT"
+  }
+ ],
+ "erreurs": [
+  {
+   "id": "D-051",
+   "texte": "le portail rh ne s ouvre pas dans firefox",
+   "source": "dev",
+   "attendu": "RESOLUTION_AUTO",
+   "categories_attendues": [
+    "Web / Intranet"
+   ],
+   "critique": false,
+   "decision": "RESOLUTION_AUTO",
+   "categorie": "Logiciel",
+   "score": 1.0,
+   "confiance": "MOYENNE",
+   "mots_reconnus": [
+    "ouvre"
+   ],
+   "ambigu": true,
+   "incertain": true,
+   "verdict": "MAL_CATEGORISE",
+   "categorie_correcte": false,
+   "temps_ms": 0.912
+  }
+ ]
+}
