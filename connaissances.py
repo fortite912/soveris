@@ -38,7 +38,7 @@ BASE_CONNAISSANCES = [
         "id": "KB-002",
         "categorie": "Compte / Acces",
         "niveau": "N1",
-        "mots_cles": ["mot", "passe", "password", "oublie", "verrouille", "bloque", "connexion", "identifiant", "session"],
+        "mots_cles": ["mot de passe", "mdp", "password", "oublie", "verrouille", "bloque", "connexion", "identifiant", "session"],
         "solution": (
             "1. Rendez-vous sur le portail de reinitialisation : https://reset.entreprise.local\n"
             "2. Cliquez sur 'Mot de passe oublie' et suivez la procedure par e-mail.\n"
@@ -97,7 +97,7 @@ BASE_CONNAISSANCES = [
         "id": "KB-007",
         "categorie": "Reseau",
         "niveau": "N1",
-        "mots_cles": ["vpn", "teletravail", "distance", "tunnel", "acces", "distant"],
+        "mots_cles": ["vpn", "tunnel", "acces distant", "client vpn"],
         "solution": (
             "1. Verifiez d'abord votre connexion internet (hors VPN).\n"
             "2. Fermez puis relancez le client VPN.\n"
@@ -109,7 +109,7 @@ BASE_CONNAISSANCES = [
         "id": "KB-008",
         "categorie": "Compte / Acces",
         "niveau": "N1",
-        "mots_cles": ["partage", "dossier", "lecteur", "fichier", "acces", "droits", "serveur", "disque"],
+        "mots_cles": ["partage", "dossier", "lecteur", "fichier", "acces", "droits", "serveur", "lecteur reseau"],
         "solution": (
             "1. Verifiez que vous etes connecte au reseau d'entreprise ou au VPN.\n"
             "2. Reconnectez le lecteur reseau (clic droit > Reconnecter).\n"
@@ -170,7 +170,8 @@ BASE_CONNAISSANCES = [
         "categorie": "Securite",
         "niveau": "N2",
         "mots_cles": ["virus", "ransomware", "piratage", "hacke", "phishing", "hameconnage", "suspect", "rancongiciel", "arnaque",
-                      "vole", "volee", "pirate", "demande mes identifiants"],
+                      "vole", "volee", "pirate", "piratee", "demande mes identifiants", "cheval de troie", "malware",
+                      "faux site", "chiffre", "usurpation", "compromis"],
         "solution": (
             "INCIDENT DE SECURITE - escalade prioritaire vers l'equipe securite.\n"
             "Consigne immediate a l'utilisateur : deconnectez le poste du reseau "
@@ -181,7 +182,8 @@ BASE_CONNAISSANCES = [
         "id": "KB-102",
         "categorie": "Infrastructure",
         "niveau": "N2",
-        "mots_cles": ["serveur", "panne", "production", "down", "indisponible", "coupure", "tout", "personne"],
+        "mots_cles": ["serveur", "panne", "production", "prod", "down", "indisponible", "coupure", "tout le monde",
+                      "plus personne", "personne ne peut", "tout le service", "toute l equipe", "generale"],
         "solution": (
             "PANNE D'INFRASTRUCTURE potentielle - escalade vers l'equipe systeme/reseau.\n"
             "Contexte a verifier : nombre d'utilisateurs impactes, perimetre, criticite."
@@ -191,7 +193,7 @@ BASE_CONNAISSANCES = [
         "id": "KB-103",
         "categorie": "Donnees",
         "niveau": "N2",
-        "mots_cles": ["supprime", "perdu", "efface", "corrompu", "disparu", "recuperer", "restauration", "sauvegarde", "par erreur"],
+        "mots_cles": ["supprime", "perdu", "efface", "corrompu", "illisible", "disparu", "recuperer", "restauration", "sauvegarde", "par erreur"],
         "solution": (
             "PERTE DE DONNEES potentielle - escalade vers l'equipe systeme.\n"
             "Consigne immediate : ne plus ecrire sur le poste/le lecteur concerne.\n"
