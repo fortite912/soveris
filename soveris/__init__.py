@@ -52,7 +52,10 @@ def normaliser(texte):
     # Decompose les caracteres accentues puis retire les accents
     texte = unicodedata.normalize("NFKD", texte)
     texte = "".join(c for c in texte if not unicodedata.combining(c))
-    return texte
+    # Apostrophes et traits d'union deviennent des espaces : "partage d'ecran",
+    # "partage d ecran" et "wi-fi" / "wi fi" sont alors identiques.
+    texte = re.sub(r"[\u2019'`\-]+", " ", texte)
+    return re.sub(r"\s+", " ", texte).strip()
 
 
 # Nombre d'articles dans lesquels chaque mot-cle (normalise) apparait.
