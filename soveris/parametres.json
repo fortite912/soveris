@@ -1,7 +1,7 @@
 {
  "seuil_confiance": 1.0,
  "seuil_revue": 1.0,
- "tolerance_pluriel": false,
+ "tolerance_pluriel": true,
  "poids_partage": false,
  "poids_multimot": 1.0,
  "marge_n2": 0.0

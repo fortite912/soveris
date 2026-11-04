@@ -98,10 +98,16 @@ def scorer_article(texte_ticket, article, parametres=None):
     texte_normalise = normaliser(texte_ticket)
     mots_trouves = []
     score = 0.0
+    occupes = []  # portions du texte deja comptees : un meme mot du ticket
+    #              ne peut pas valoir deux fois ("mail" et "mails" sur "mails")
     for mot_cle in article["mots_cles"]:
-        if re.search(motif_mot(mot_cle, parametres), texte_normalise):
+        for m in re.finditer(motif_mot(mot_cle, parametres), texte_normalise):
+            if any(m.start() < fin and m.end() > debut for debut, fin in occupes):
+                continue
+            occupes.append((m.start(), m.end()))
             mots_trouves.append(mot_cle)
             score += poids_mot(mot_cle, parametres)
+            break
     return round(score, 3), mots_trouves
 
 
