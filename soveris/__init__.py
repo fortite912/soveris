@@ -238,13 +238,13 @@ def est_incertain(resultat):
     """
     Une decision est "incertaine" (a revoir par un humain) si :
       - aucun mot-cle n'a ete reconnu (categorie Inconnu), ou
-      - le score est au niveau du seuil minimal (un seul indice), ou
-      - deux articles de categories differentes sont a egalite.
+      - le score est strictement inferieur a PARAMETRES["seuil_revue"], ou
+      - deux articles de categories differentes sont a egalite (ambigu).
     Sert au journal (file "a revoir") et au diagnostic ; ne change pas la decision.
     """
     return (
         resultat["categorie"] == "Inconnu"
-        or resultat["score"] <= PARAMETRES["seuil_revue"]
+        or resultat["score"] < PARAMETRES["seuil_revue"]
         or resultat.get("ambigu", False)
     )
 

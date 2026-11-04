@@ -2,7 +2,8 @@
 Parametres calibrables du moteur (charges depuis soveris/parametres.json).
 
   seuil_confiance   score pondere minimal pour oser une resolution automatique (N1)
-  seuil_revue       score en dessous duquel la decision est "incertaine" (file a revoir)
+  seuil_revue       score STRICTEMENT inferieur => decision "incertaine" (file a revoir) ;
+                    s'ajoute aux cas Inconnu et aux egalites entre categories
   tolerance_pluriel accepte un suffixe pluriel (s, x) apres un mot-cle
   poids_partage     un mot-cle present dans plusieurs articles pese 1/nb_articles
   poids_multimot    multiplicateur applique aux mots-cles composes (plusieurs mots)

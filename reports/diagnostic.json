@@ -1,24 +1,24 @@
 {
- "horodatage": "2026-11-04T13:20:23",
+ "horodatage": "2026-11-04T13:23:54",
  "verdict": "OK",
  "code_sortie": 0,
  "baseline": {
-  "horodatage": "2026-11-04T13:17:53",
-  "commit": "e18345c",
+  "horodatage": "2026-11-04T13:23:52",
+  "commit": "dd91ede",
   "jeux": {
    "test": {
     "total": 50,
-    "corrects": 46,
-    "precision": 92.0,
+    "corrects": 48,
+    "precision": 96.0,
     "erreurs_critiques": 1,
     "critiques_mal_orientees": 0,
-    "incertains": 37,
+    "incertains": 17,
     "par_classe": {
      "Reseau": 100.0,
      "Compte / Acces": 100.0,
-     "Messagerie": 66.7,
+     "Messagerie": 100.0,
      "Materiel": 85.7,
-     "Performance": 50.0,
+     "Performance": 100.0,
      "Collaboration": 100.0,
      "Logiciel": 100.0,
      "Web / Intranet": 100.0,
@@ -28,31 +28,31 @@
      "Donnees": 100.0,
      "Inconnu": 87.5
     },
-    "latence_p95_ms": 0.772
+    "latence_p95_ms": 0.685
    },
    "dev": {
     "total": 83,
-    "corrects": 68,
-    "precision": 81.9,
-    "erreurs_critiques": 6,
-    "critiques_mal_orientees": 3,
-    "incertains": 51,
+    "corrects": 82,
+    "precision": 98.8,
+    "erreurs_critiques": 0,
+    "critiques_mal_orientees": 1,
+    "incertains": 24,
     "par_classe": {
      "Reseau": 100.0,
-     "Compte / Acces": 87.5,
-     "Messagerie": 66.7,
-     "Materiel": 90.0,
-     "Performance": 80.0,
-     "Logiciel": 83.3,
-     "Collaboration": 60.0,
+     "Compte / Acces": 100.0,
+     "Messagerie": 100.0,
+     "Materiel": 100.0,
+     "Performance": 100.0,
+     "Logiciel": 100.0,
+     "Collaboration": 100.0,
      "Web / Intranet": 75.0,
      "Telephonie": 100.0,
-     "Securite": 75.0,
+     "Securite": 100.0,
      "Infrastructure": 100.0,
-     "Donnees": 60.0,
-     "Inconnu": 80.0
+     "Donnees": 100.0,
+     "Inconnu": 100.0
     },
-    "latence_p95_ms": 0.839
+    "latence_p95_ms": 0.823
    },
    "synthetique": {
     "total": 204,
@@ -60,7 +60,7 @@
     "precision": 100.0,
     "erreurs_critiques": 0,
     "critiques_mal_orientees": 0,
-    "incertains": 150,
+    "incertains": 48,
     "par_classe": {
      "Reseau": 100.0,
      "Compte / Acces": 100.0,
@@ -76,25 +76,51 @@
      "Donnees": 100.0,
      "Inconnu": 100.0
     },
-    "latence_p95_ms": 0.992
+    "latence_p95_ms": 1.004
    }
   }
  },
- "tests": {},
+ "tests": {
+  "unittest (tests/)": {
+   "ok": true,
+   "code": 0,
+   "duree_s": 1.61,
+   "dernieres_lignes": [
+    "....................",
+    "----------------------------------------------------------------------",
+    "Ran 20 tests in 1.487s",
+    "",
+    "OK"
+   ]
+  },
+  "tests.py (historique)": {
+   "ok": true,
+   "code": 0,
+   "duree_s": 0.11,
+   "dernieres_lignes": [
+    "  [OK ] Integrite de la base de connaissances",
+    "  [OK ] Jeu de demonstration verrouille : 7/10 resolus (70 %)",
+    "  [OK ] Validation 50 tickets : au moins 46/50 decisions correctes (92 %)",
+    "  [OK ] Validation : ZERO fausse resolution dangereuse",
+    "--------------------------------------------------------",
+    "  TOUS LES TESTS PASSENT (19/19)"
+   ]
+  }
+ },
  "evaluation": {
   "test": {
    "total": 50,
-   "corrects": 46,
-   "precision": 92.0,
+   "corrects": 48,
+   "precision": 96.0,
    "erreurs_critiques": 1,
    "critiques_mal_orientees": 0,
-   "incertains": 37,
+   "incertains": 17,
    "par_classe": {
     "Reseau": 100.0,
     "Compte / Acces": 100.0,
-    "Messagerie": 66.7,
+    "Messagerie": 100.0,
     "Materiel": 85.7,
-    "Performance": 50.0,
+    "Performance": 100.0,
     "Collaboration": 100.0,
     "Logiciel": 100.0,
     "Web / Intranet": 100.0,
@@ -104,31 +130,31 @@
     "Donnees": 100.0,
     "Inconnu": 87.5
    },
-   "latence_p95_ms": 0.618
+   "latence_p95_ms": 0.721
   },
   "dev": {
    "total": 83,
-   "corrects": 68,
-   "precision": 81.9,
-   "erreurs_critiques": 6,
-   "critiques_mal_orientees": 3,
-   "incertains": 51,
+   "corrects": 82,
+   "precision": 98.8,
+   "erreurs_critiques": 0,
+   "critiques_mal_orientees": 1,
+   "incertains": 24,
    "par_classe": {
     "Reseau": 100.0,
-    "Compte / Acces": 87.5,
-    "Messagerie": 66.7,
-    "Materiel": 90.0,
-    "Performance": 80.0,
-    "Logiciel": 83.3,
-    "Collaboration": 60.0,
+    "Compte / Acces": 100.0,
+    "Messagerie": 100.0,
+    "Materiel": 100.0,
+    "Performance": 100.0,
+    "Logiciel": 100.0,
+    "Collaboration": 100.0,
     "Web / Intranet": 75.0,
     "Telephonie": 100.0,
-    "Securite": 75.0,
+    "Securite": 100.0,
     "Infrastructure": 100.0,
-    "Donnees": 60.0,
-    "Inconnu": 80.0
+    "Donnees": 100.0,
+    "Inconnu": 100.0
    },
-   "latence_p95_ms": 0.639
+   "latence_p95_ms": 0.717
   },
   "synthetique": {
    "total": 204,
@@ -136,7 +162,7 @@
    "precision": 100.0,
    "erreurs_critiques": 0,
    "critiques_mal_orientees": 0,
-   "incertains": 150,
+   "incertains": 48,
    "par_classe": {
     "Reseau": 100.0,
     "Compte / Acces": 100.0,
@@ -152,7 +178,7 @@
     "Donnees": 100.0,
     "Inconnu": 100.0
    },
-   "latence_p95_ms": 0.636
+   "latence_p95_ms": 0.666
   }
  },
  "ecarts": [],
@@ -165,72 +191,58 @@
    ]
   },
   {
-   "priorite": "P3-qualite",
-   "message": "[dev] 6 erreur(s) critique(s) presente(s)",
-   "detail": [
-    "D-062 « on m a piratee, mes contacts recoivent des mails de moi » -> RESOLUTION_AUTO / Messagerie",
-    "D-063 « un faux site de la banque me demande mon mot de passe » -> RESOLUTION_AUTO / Compte / Acces",
-    "D-071 « tous mes documents ont disparu du lecteur partage » -> RESOLUTION_AUTO / Compte / Acces",
-    "D-073 « mon disque dur fait un bruit bizarre et des fichiers sont illisibles » -> RESOLUTION_AUTO / Compte / Acces",
-    "D-076 « mon badge ne passe plus a l entree » -> RESOLUTION_AUTO / Compte / Acces",
-    "D-077 « je souhaite poser un jour de teletravail » -> RESOLUTION_AUTO / Reseau"
-   ]
-  },
-  {
    "priorite": "P4-information",
-   "message": "[test] 37/50 decision(s) a faible confiance",
+   "message": "[test] 17/50 decision(s) a faible confiance",
    "detail": [
-    "T-001 « le wifi coupe sans arret dans la salle de reunion » -> RESOLUTION_AUTO / Reseau",
-    "T-004 « compte bloque apres plusieurs essais » -> RESOLUTION_AUTO / Compte / Acces",
-    "T-005 « je ne recois plus mes emails depuis hier » -> ESCALADE / Inconnu",
     "T-006 « outlook plante au demarrage » -> RESOLUTION_AUTO / Messagerie",
-    "T-009 « mon pc est super lent depuis la mise a jour » -> RESOLUTION_AUTO / Performance",
-    "T-010 « tout rame quand j ouvre plusieurs fenetres » -> ESCALADE / Infrastructure",
-    "T-011 « le vpn refuse de se connecter depuis chez moi » -> RESOLUTION_AUTO / Reseau",
-    "T-014 « ma souris ne repond plus » -> RESOLUTION_AUTO / Materiel",
-    "T-015 « ecran noir au demarrage du poste » -> RESOLUTION_AUTO / Materiel",
-    "T-016 « le clavier tape des caracteres bizarres » -> RESOLUTION_AUTO / Materiel"
+    "T-010 « tout rame quand j ouvre plusieurs fenetres » -> RESOLUTION_AUTO / Performance",
+    "T-017 « mon casque n est pas detecte en visio » -> RESOLUTION_AUTO / Materiel",
+    "T-018 « teams ne veut pas partager mon ecran » -> RESOLUTION_AUTO / Materiel",
+    "T-032 « mon ordi est mort » -> ESCALADE / Inconnu",
+    "T-034 « un mail bizarre me demande mes identifiants » -> ESCALADE / Securite",
+    "T-035 « on m a vole mon ordinateur portable dans le train » -> ESCALADE / Securite",
+    "T-039 « j ai efface un dossier partage par erreur » -> ESCALADE / Donnees",
+    "T-040 « fichier client corrompu impossible a ouvrir » -> ESCALADE / Donnees",
+    "T-042 « le serveur de fichiers est indisponible » -> ESCALADE / Infrastructure"
    ]
   },
   {
    "priorite": "P4-information",
-   "message": "[dev] 3 escalade(s) critique(s) mal orientee(s)",
+   "message": "[dev] 1 escalade(s) critique(s) mal orientee(s)",
    "detail": [
-    "D-056 « j ai clique sur un lien dans un mail bizarre et maintenant tout est chiffre » -> Infrastructure",
-    "D-057 « quelqu un a utilise mon compte pendant mes vacances » -> Inconnu",
-    "D-058 « l antivirus a trouve un cheval de troie » -> Inconnu"
+    "D-057 « quelqu un a utilise mon compte pendant mes vacances » -> Inconnu"
    ]
   },
   {
    "priorite": "P4-information",
-   "message": "[dev] 51/83 decision(s) a faible confiance",
+   "message": "[dev] 24/83 decision(s) a faible confiance",
    "detail": [
-    "D-001 « bonjour le wifi de mon bureau ne fonctionne plus depuis ce matin » -> RESOLUTION_AUTO / Reseau",
+    "D-004 « le vpn se coupe des que je lance une visio en teletravail » -> RESOLUTION_AUTO / Reseau",
     "D-007 « la connexion est tres instable en salle 204 » -> RESOLUTION_AUTO / Reseau",
-    "D-009 « mon compte est verrouille apres 3 tentatives » -> RESOLUTION_AUTO / Compte / Acces",
+    "D-011 « le mot de passe de ma messagerie a expire » -> RESOLUTION_AUTO / Compte / Acces",
     "D-013 « le lecteur reseau P n apparait plus dans mon explorateur » -> RESOLUTION_AUTO / Reseau",
-    "D-015 « pouvez vous reinitialiser mon mdp svp » -> ESCALADE / Inconnu",
-    "D-016 « outlook ne se synchronise plus » -> RESOLUTION_AUTO / Messagerie",
-    "D-018 « mes courriels arrivent avec plusieurs heures de retard » -> ESCALADE / Inconnu",
-    "D-021 « je ne recois plus les emails de mes collegues » -> ESCALADE / Inconnu",
-    "D-024 « impossible d imprimer depuis mon poste, le document reste en attente » -> RESOLUTION_AUTO / Materiel",
-    "D-025 « le scanner ne numerise plus en recto verso » -> RESOLUTION_AUTO / Materiel"
+    "D-028 « le clavier de mon portable a des touches qui ne repondent pas » -> RESOLUTION_AUTO / Materiel",
+    "D-033 « excel se fige des que j ouvre un gros fichier » -> RESOLUTION_AUTO / Performance",
+    "D-051 « le portail rh ne s ouvre pas dans firefox » -> RESOLUTION_AUTO / Logiciel",
+    "D-056 « j ai clique sur un lien dans un mail bizarre et maintenant tout est chiffre » -> ESCALADE / Securite",
+    "D-057 « quelqu un a utilise mon compte pendant mes vacances » -> ESCALADE / Inconnu",
+    "D-059 « un collegue a recu un sms qui demande mes identifiants » -> ESCALADE / Securite"
    ]
   },
   {
    "priorite": "P4-information",
-   "message": "[synthetique] 150/204 decision(s) a faible confiance",
+   "message": "[synthetique] 48/204 decision(s) a faible confiance",
    "detail": [
-    "S-001 « svp le wifi ne marche plus merci » -> RESOLUTION_AUTO / Reseau",
-    "S-002 « bonjour, le wifi ne marche plus » -> RESOLUTION_AUTO / Reseau",
-    "S-003 « le wifi ne marche plus !!! » -> RESOLUTION_AUTO / Reseau",
-    "S-004 « depuis ce matin le wifi ne marche plus c est bloquant » -> RESOLUTION_AUTO / Reseau",
-    "S-005 « depuis ce matin le wifi ne marche plus !!! » -> RESOLUTION_AUTO / Reseau",
-    "S-006 « depuis ce matin le wifi ne marche plus » -> RESOLUTION_AUTO / Reseau",
-    "S-007 « bonjour, plus d internet !!! » -> RESOLUTION_AUTO / Reseau",
-    "S-008 « urgent : plus d internet merci » -> RESOLUTION_AUTO / Reseau",
-    "S-009 « plus d internet pouvez vous m aider » -> RESOLUTION_AUTO / Reseau",
-    "S-010 « urgent : plus d internet !!! » -> RESOLUTION_AUTO / Reseau"
+    "S-037 « hello outlook ne s ouvre plus » -> RESOLUTION_AUTO / Messagerie",
+    "S-038 « depuis ce matin outlook ne s ouvre plus c est bloquant » -> RESOLUTION_AUTO / Messagerie",
+    "S-039 « bonjour, outlook ne s ouvre plus au 2e etage » -> RESOLUTION_AUTO / Messagerie",
+    "S-040 « bonjour, outlook ne s ouvre plus pouvez vous m aider » -> RESOLUTION_AUTO / Messagerie",
+    "S-041 « urgent : outlook ne s ouvre plus pouvez vous m aider » -> RESOLUTION_AUTO / Messagerie",
+    "S-042 « outlook ne s ouvre plus pouvez vous m aider » -> RESOLUTION_AUTO / Messagerie",
+    "S-133 « depuis ce matin j ai recu un mail de phishing » -> ESCALADE / Securite",
+    "S-134 « bonjour, j ai recu un mail de phishing !!! » -> ESCALADE / Securite",
+    "S-135 « re-bonjour, j ai recu un mail de phishing depuis hier » -> ESCALADE / Securite",
+    "S-136 « re-bonjour, j ai recu un mail de phishing c est bloquant » -> ESCALADE / Securite"
    ]
   },
   {

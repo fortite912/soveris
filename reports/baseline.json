@@ -1,20 +1,20 @@
 {
- "horodatage": "2026-11-04T13:17:53",
- "commit": "e18345c",
+ "horodatage": "2026-11-04T13:23:52",
+ "commit": "dd91ede",
  "jeux": {
   "test": {
    "total": 50,
-   "corrects": 46,
-   "precision": 92.0,
+   "corrects": 48,
+   "precision": 96.0,
    "erreurs_critiques": 1,
    "critiques_mal_orientees": 0,
-   "incertains": 37,
+   "incertains": 17,
    "par_classe": {
     "Reseau": 100.0,
     "Compte / Acces": 100.0,
-    "Messagerie": 66.7,
+    "Messagerie": 100.0,
     "Materiel": 85.7,
-    "Performance": 50.0,
+    "Performance": 100.0,
     "Collaboration": 100.0,
     "Logiciel": 100.0,
     "Web / Intranet": 100.0,
@@ -24,31 +24,31 @@
     "Donnees": 100.0,
     "Inconnu": 87.5
    },
-   "latence_p95_ms": 0.772
+   "latence_p95_ms": 0.685
   },
   "dev": {
    "total": 83,
-   "corrects": 68,
-   "precision": 81.9,
-   "erreurs_critiques": 6,
-   "critiques_mal_orientees": 3,
-   "incertains": 51,
+   "corrects": 82,
+   "precision": 98.8,
+   "erreurs_critiques": 0,
+   "critiques_mal_orientees": 1,
+   "incertains": 24,
    "par_classe": {
     "Reseau": 100.0,
-    "Compte / Acces": 87.5,
-    "Messagerie": 66.7,
-    "Materiel": 90.0,
-    "Performance": 80.0,
-    "Logiciel": 83.3,
-    "Collaboration": 60.0,
+    "Compte / Acces": 100.0,
+    "Messagerie": 100.0,
+    "Materiel": 100.0,
+    "Performance": 100.0,
+    "Logiciel": 100.0,
+    "Collaboration": 100.0,
     "Web / Intranet": 75.0,
     "Telephonie": 100.0,
-    "Securite": 75.0,
+    "Securite": 100.0,
     "Infrastructure": 100.0,
-    "Donnees": 60.0,
-    "Inconnu": 80.0
+    "Donnees": 100.0,
+    "Inconnu": 100.0
    },
-   "latence_p95_ms": 0.839
+   "latence_p95_ms": 0.823
   },
   "synthetique": {
    "total": 204,
@@ -56,7 +56,7 @@
    "precision": 100.0,
    "erreurs_critiques": 0,
    "critiques_mal_orientees": 0,
-   "incertains": 150,
+   "incertains": 48,
    "par_classe": {
     "Reseau": 100.0,
     "Compte / Acces": 100.0,
@@ -72,7 +72,7 @@
     "Donnees": 100.0,
     "Inconnu": 100.0
    },
-   "latence_p95_ms": 0.992
+   "latence_p95_ms": 1.004
   }
  }
 }

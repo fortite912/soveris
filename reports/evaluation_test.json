@@ -1,22 +1,22 @@
 {
  "jeu": "test",
- "horodatage": "2026-11-04T13:20:23",
+ "horodatage": "2026-11-04T13:23:54",
  "total": 50,
- "corrects": 46,
- "precision": 92.0,
+ "corrects": 48,
+ "precision": 96.0,
  "verdicts": {
-  "CORRECT": 46,
-  "MANQUE": 3,
+  "CORRECT": 48,
+  "MANQUE": 1,
   "FAUSSE_HORS_PERIMETRE": 1
  },
  "erreurs_critiques": 1,
  "critiques_mal_orientees": 0,
- "incertains": 37,
+ "incertains": 17,
  "latence_ms": {
-  "mediane": 0.538,
-  "p95": 0.618,
-  "max": 3.842,
-  "total_jeu": 30.4
+  "mediane": 0.608,
+  "p95": 0.721,
+  "max": 6.172,
+  "total_jeu": 36.9
  },
  "par_classe": {
   "Reseau": {
@@ -33,16 +33,9 @@
   },
   "Messagerie": {
    "total": 3,
-   "corrects": 2,
-   "erreurs": [
-    {
-     "id": "T-005",
-     "texte": "je ne recois plus mes emails depuis hier",
-     "verdict": "MANQUE",
-     "obtenu": "ESCALADE / Inconnu"
-    }
-   ],
-   "precision": 66.7
+   "corrects": 3,
+   "erreurs": [],
+   "precision": 100.0
   },
   "Materiel": {
    "total": 7,
@@ -59,16 +52,9 @@
   },
   "Performance": {
    "total": 2,
-   "corrects": 1,
-   "erreurs": [
-    {
-     "id": "T-010",
-     "texte": "tout rame quand j ouvre plusieurs fenetres",
-     "verdict": "MANQUE",
-     "obtenu": "ESCALADE / Infrastructure"
-    }
-   ],
-   "precision": 50.0
+   "corrects": 2,
+   "erreurs": [],
+   "precision": 100.0
   },
   "Collaboration": {
    "total": 2,
@@ -134,16 +120,14 @@
    "Compte / Acces": 5
   },
   "Messagerie": {
-   "Inconnu": 1,
-   "Messagerie": 2
+   "Messagerie": 3
   },
   "Materiel": {
    "Materiel": 6,
    "Inconnu": 1
   },
   "Performance": {
-   "Performance": 1,
-   "Infrastructure": 1
+   "Performance": 2
   },
   "Collaboration": {
    "Materiel": 1,
@@ -190,35 +174,14 @@
     "intranet"
    ],
    "ambigu": false,
-   "incertain": true,
+   "incertain": false,
    "verdict": "FAUSSE_HORS_PERIMETRE",
    "categorie_correcte": false,
-   "temps_ms": 0.518
+   "temps_ms": 0.593
   }
  ],
  "details_critiques_mal_orientees": [],
  "details_incertains": [
-  {
-   "id": "T-001",
-   "texte": "le wifi coupe sans arret dans la salle de reunion",
-   "obtenu": "RESOLUTION_AUTO / Reseau",
-   "score": 1.0,
-   "verdict": "CORRECT"
-  },
-  {
-   "id": "T-004",
-   "texte": "compte bloque apres plusieurs essais",
-   "obtenu": "RESOLUTION_AUTO / Compte / Acces",
-   "score": 1.0,
-   "verdict": "CORRECT"
-  },
-  {
-   "id": "T-005",
-   "texte": "je ne recois plus mes emails depuis hier",
-   "obtenu": "ESCALADE / Inconnu",
-   "score": 0.0,
-   "verdict": "MANQUE"
-  },
   {
    "id": "T-006",
    "texte": "outlook plante au demarrage",
@@ -227,44 +190,9 @@
    "verdict": "CORRECT"
   },
   {
-   "id": "T-009",
-   "texte": "mon pc est super lent depuis la mise a jour",
-   "obtenu": "RESOLUTION_AUTO / Performance",
-   "score": 1.0,
-   "verdict": "CORRECT"
-  },
-  {
    "id": "T-010",
    "texte": "tout rame quand j ouvre plusieurs fenetres",
-   "obtenu": "ESCALADE / Infrastructure",
-   "score": 1.0,
-   "verdict": "MANQUE"
-  },
-  {
-   "id": "T-011",
-   "texte": "le vpn refuse de se connecter depuis chez moi",
-   "obtenu": "RESOLUTION_AUTO / Reseau",
-   "score": 1.0,
-   "verdict": "CORRECT"
-  },
-  {
-   "id": "T-014",
-   "texte": "ma souris ne repond plus",
-   "obtenu": "RESOLUTION_AUTO / Materiel",
-   "score": 1.0,
-   "verdict": "CORRECT"
-  },
-  {
-   "id": "T-015",
-   "texte": "ecran noir au demarrage du poste",
-   "obtenu": "RESOLUTION_AUTO / Materiel",
-   "score": 1.0,
-   "verdict": "CORRECT"
-  },
-  {
-   "id": "T-016",
-   "texte": "le clavier tape des caracteres bizarres",
-   "obtenu": "RESOLUTION_AUTO / Materiel",
+   "obtenu": "RESOLUTION_AUTO / Performance",
    "score": 1.0,
    "verdict": "CORRECT"
   },
@@ -283,74 +211,11 @@
    "verdict": "CORRECT"
   },
   {
-   "id": "T-020",
-   "texte": "impossible d ouvrir l application de compta",
-   "obtenu": "RESOLUTION_AUTO / Logiciel",
-   "score": 1.0,
-   "verdict": "CORRECT"
-  },
-  {
-   "id": "T-023",
-   "texte": "chrome ne charge aucune page",
-   "obtenu": "RESOLUTION_AUTO / Web / Intranet",
-   "score": 1.0,
-   "verdict": "CORRECT"
-  },
-  {
-   "id": "T-024",
-   "texte": "l intranet est inaccessible depuis mon poste",
-   "obtenu": "RESOLUTION_AUTO / Web / Intranet",
-   "score": 1.0,
-   "verdict": "CORRECT"
-  },
-  {
-   "id": "T-025",
-   "texte": "le site de l entreprise ne s affiche pas",
-   "obtenu": "RESOLUTION_AUTO / Web / Intranet",
-   "score": 1.0,
-   "verdict": "CORRECT"
-  },
-  {
-   "id": "T-026",
-   "texte": "mon telephone pro ne recoit plus d appels",
-   "obtenu": "RESOLUTION_AUTO / Telephonie",
-   "score": 1.0,
-   "verdict": "CORRECT"
-  },
-  {
-   "id": "T-027",
-   "texte": "la carte sim n est pas reconnue",
-   "obtenu": "RESOLUTION_AUTO / Telephonie",
-   "score": 1.0,
-   "verdict": "CORRECT"
-  },
-  {
-   "id": "T-028",
-   "texte": "le portable de service ne s allume plus",
-   "obtenu": "RESOLUTION_AUTO / Telephonie",
-   "score": 1.0,
-   "verdict": "CORRECT"
-  },
-  {
-   "id": "T-031",
-   "texte": "session windows verrouillee impossible de rentrer",
-   "obtenu": "RESOLUTION_AUTO / Compte / Acces",
-   "score": 1.0,
-   "verdict": "CORRECT"
-  },
-  {
    "id": "T-032",
    "texte": "mon ordi est mort",
    "obtenu": "ESCALADE / Inconnu",
    "score": 0.0,
    "verdict": "MANQUE"
-  },
-  {
-   "id": "T-033",
-   "texte": "je crois que j ai un virus sur mon poste",
-   "obtenu": "ESCALADE / Securite",
-   "score": 1.0,
-   "verdict": "CORRECT"
   },
   {
    "id": "T-034",
@@ -363,20 +228,6 @@
    "id": "T-035",
    "texte": "on m a vole mon ordinateur portable dans le train",
    "obtenu": "ESCALADE / Securite",
-   "score": 1.0,
-   "verdict": "CORRECT"
-  },
-  {
-   "id": "T-036",
-   "texte": "ransomware detecte par l antivirus",
-   "obtenu": "ESCALADE / Securite",
-   "score": 1.0,
-   "verdict": "CORRECT"
-  },
-  {
-   "id": "T-038",
-   "texte": "la prod est tombee tout le monde est bloque",
-   "obtenu": "ESCALADE / Infrastructure",
    "score": 1.0,
    "verdict": "CORRECT"
   },
@@ -395,10 +246,10 @@
    "verdict": "CORRECT"
   },
   {
-   "id": "T-041",
-   "texte": "je pense que mon compte a ete pirate",
-   "obtenu": "ESCALADE / Securite",
-   "score": 1.0,
+   "id": "T-042",
+   "texte": "le serveur de fichiers est indisponible",
+   "obtenu": "ESCALADE / Infrastructure",
+   "score": 2.0,
    "verdict": "CORRECT"
   },
   {
@@ -437,13 +288,6 @@
    "verdict": "CORRECT"
   },
   {
-   "id": "T-048",
-   "texte": "comment changer ma photo sur l intranet",
-   "obtenu": "RESOLUTION_AUTO / Web / Intranet",
-   "score": 1.0,
-   "verdict": "FAUSSE_HORS_PERIMETRE"
-  },
-  {
    "id": "T-049",
    "texte": "il fait trop chaud dans l open space",
    "obtenu": "ESCALADE / Inconnu",
@@ -459,48 +303,6 @@
   }
  ],
  "erreurs": [
-  {
-   "id": "T-005",
-   "texte": "je ne recois plus mes emails depuis hier",
-   "source": "test_gele",
-   "attendu": "RESOLUTION_AUTO",
-   "categories_attendues": [
-    "Messagerie"
-   ],
-   "critique": false,
-   "decision": "ESCALADE",
-   "categorie": "Inconnu",
-   "score": 0.0,
-   "confiance": "NULLE",
-   "mots_reconnus": [],
-   "ambigu": false,
-   "incertain": true,
-   "verdict": "MANQUE",
-   "categorie_correcte": false,
-   "temps_ms": 0.555
-  },
-  {
-   "id": "T-010",
-   "texte": "tout rame quand j ouvre plusieurs fenetres",
-   "source": "test_gele",
-   "attendu": "RESOLUTION_AUTO",
-   "categories_attendues": [
-    "Performance"
-   ],
-   "critique": false,
-   "decision": "ESCALADE",
-   "categorie": "Infrastructure",
-   "score": 1.0,
-   "confiance": "MOYENNE",
-   "mots_reconnus": [
-    "tout"
-   ],
-   "ambigu": true,
-   "incertain": true,
-   "verdict": "MANQUE",
-   "categorie_correcte": false,
-   "temps_ms": 0.555
-  },
   {
    "id": "T-032",
    "texte": "mon ordi est mort",
@@ -520,7 +322,7 @@
    "incertain": true,
    "verdict": "MANQUE",
    "categorie_correcte": false,
-   "temps_ms": 0.449
+   "temps_ms": 0.558
   },
   {
    "id": "T-048",
@@ -539,10 +341,10 @@
     "intranet"
    ],
    "ambigu": false,
-   "incertain": true,
+   "incertain": false,
    "verdict": "FAUSSE_HORS_PERIMETRE",
    "categorie_correcte": false,
-   "temps_ms": 0.518
+   "temps_ms": 0.593
   }
  ]
 }
