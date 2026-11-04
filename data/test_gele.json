@@ -1,0 +1,511 @@
+{
+ "description": "Jeu de test GELE : 50 tickets independants (ex-validation.py). Ne jamais modifier pour ameliorer un score. Protege par empreinte SHA-256 dans tests/test_jeu_gele.py.",
+ "cas": [
+  {
+   "id": "T-001",
+   "texte": "le wifi coupe sans arret dans la salle de reunion",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Reseau"
+   ],
+   "critique": false,
+   "source": "test_gele"
+  },
+  {
+   "id": "T-002",
+   "texte": "impossible de me connecter a internet ce matin",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Reseau"
+   ],
+   "critique": false,
+   "source": "test_gele"
+  },
+  {
+   "id": "T-003",
+   "texte": "mon mot de passe ne marche plus",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Compte / Acces"
+   ],
+   "critique": false,
+   "source": "test_gele"
+  },
+  {
+   "id": "T-004",
+   "texte": "compte bloque apres plusieurs essais",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Compte / Acces"
+   ],
+   "critique": false,
+   "source": "test_gele"
+  },
+  {
+   "id": "T-005",
+   "texte": "je ne recois plus mes emails depuis hier",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Messagerie"
+   ],
+   "critique": false,
+   "source": "test_gele"
+  },
+  {
+   "id": "T-006",
+   "texte": "outlook plante au demarrage",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Messagerie",
+    "Logiciel"
+   ],
+   "critique": false,
+   "source": "test_gele"
+  },
+  {
+   "id": "T-007",
+   "texte": "l imprimante affiche plus de toner",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Materiel"
+   ],
+   "critique": false,
+   "source": "test_gele"
+  },
+  {
+   "id": "T-008",
+   "texte": "bourrage papier au troisieme etage",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Materiel"
+   ],
+   "critique": false,
+   "source": "test_gele"
+  },
+  {
+   "id": "T-009",
+   "texte": "mon pc est super lent depuis la mise a jour",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Performance"
+   ],
+   "critique": false,
+   "source": "test_gele"
+  },
+  {
+   "id": "T-010",
+   "texte": "tout rame quand j ouvre plusieurs fenetres",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Performance"
+   ],
+   "critique": false,
+   "source": "test_gele"
+  },
+  {
+   "id": "T-011",
+   "texte": "le vpn refuse de se connecter depuis chez moi",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Reseau"
+   ],
+   "critique": false,
+   "source": "test_gele"
+  },
+  {
+   "id": "T-012",
+   "texte": "acces refuse au lecteur reseau commun",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Compte / Acces",
+    "Reseau"
+   ],
+   "critique": false,
+   "source": "test_gele"
+  },
+  {
+   "id": "T-013",
+   "texte": "je n ai plus acces au dossier du service compta",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Compte / Acces"
+   ],
+   "critique": false,
+   "source": "test_gele"
+  },
+  {
+   "id": "T-014",
+   "texte": "ma souris ne repond plus",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Materiel"
+   ],
+   "critique": false,
+   "source": "test_gele"
+  },
+  {
+   "id": "T-015",
+   "texte": "ecran noir au demarrage du poste",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Materiel"
+   ],
+   "critique": false,
+   "source": "test_gele"
+  },
+  {
+   "id": "T-016",
+   "texte": "le clavier tape des caracteres bizarres",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Materiel"
+   ],
+   "critique": false,
+   "source": "test_gele"
+  },
+  {
+   "id": "T-017",
+   "texte": "mon casque n est pas detecte en visio",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Materiel",
+    "Collaboration"
+   ],
+   "critique": false,
+   "source": "test_gele"
+  },
+  {
+   "id": "T-018",
+   "texte": "teams ne veut pas partager mon ecran",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Collaboration",
+    "Materiel"
+   ],
+   "critique": false,
+   "source": "test_gele"
+  },
+  {
+   "id": "T-019",
+   "texte": "le micro ne marche pas pendant les reunions zoom",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Collaboration"
+   ],
+   "critique": false,
+   "source": "test_gele"
+  },
+  {
+   "id": "T-020",
+   "texte": "impossible d ouvrir l application de compta",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Logiciel"
+   ],
+   "critique": false,
+   "source": "test_gele"
+  },
+  {
+   "id": "T-021",
+   "texte": "le logiciel de paie affiche une erreur au lancement",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Logiciel"
+   ],
+   "critique": false,
+   "source": "test_gele"
+  },
+  {
+   "id": "T-022",
+   "texte": "je dois installer un programme mais ca echoue",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Logiciel"
+   ],
+   "critique": false,
+   "source": "test_gele"
+  },
+  {
+   "id": "T-023",
+   "texte": "chrome ne charge aucune page",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Web / Intranet"
+   ],
+   "critique": false,
+   "source": "test_gele"
+  },
+  {
+   "id": "T-024",
+   "texte": "l intranet est inaccessible depuis mon poste",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Web / Intranet"
+   ],
+   "critique": false,
+   "source": "test_gele"
+  },
+  {
+   "id": "T-025",
+   "texte": "le site de l entreprise ne s affiche pas",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Web / Intranet"
+   ],
+   "critique": false,
+   "source": "test_gele"
+  },
+  {
+   "id": "T-026",
+   "texte": "mon telephone pro ne recoit plus d appels",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Telephonie"
+   ],
+   "critique": false,
+   "source": "test_gele"
+  },
+  {
+   "id": "T-027",
+   "texte": "la carte sim n est pas reconnue",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Telephonie"
+   ],
+   "critique": false,
+   "source": "test_gele"
+  },
+  {
+   "id": "T-028",
+   "texte": "le portable de service ne s allume plus",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Telephonie",
+    "Materiel"
+   ],
+   "critique": false,
+   "source": "test_gele"
+  },
+  {
+   "id": "T-029",
+   "texte": "je n arrive pas a me connecter o wifi",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Reseau"
+   ],
+   "critique": false,
+   "source": "test_gele"
+  },
+  {
+   "id": "T-030",
+   "texte": "ma boite est pleine je ne peux plus recevoir de courrier",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Messagerie"
+   ],
+   "critique": false,
+   "source": "test_gele"
+  },
+  {
+   "id": "T-031",
+   "texte": "session windows verrouillee impossible de rentrer",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Compte / Acces"
+   ],
+   "critique": false,
+   "source": "test_gele"
+  },
+  {
+   "id": "T-032",
+   "texte": "mon ordi est mort",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Materiel",
+    "Performance"
+   ],
+   "critique": false,
+   "source": "test_gele"
+  },
+  {
+   "id": "T-033",
+   "texte": "je crois que j ai un virus sur mon poste",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Securite"
+   ],
+   "critique": true,
+   "source": "test_gele"
+  },
+  {
+   "id": "T-034",
+   "texte": "un mail bizarre me demande mes identifiants",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Securite"
+   ],
+   "critique": true,
+   "source": "test_gele"
+  },
+  {
+   "id": "T-035",
+   "texte": "on m a vole mon ordinateur portable dans le train",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Securite"
+   ],
+   "critique": true,
+   "source": "test_gele"
+  },
+  {
+   "id": "T-036",
+   "texte": "ransomware detecte par l antivirus",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Securite"
+   ],
+   "critique": true,
+   "source": "test_gele"
+  },
+  {
+   "id": "T-037",
+   "texte": "plus personne n arrive a se connecter au serveur",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Infrastructure"
+   ],
+   "critique": true,
+   "source": "test_gele"
+  },
+  {
+   "id": "T-038",
+   "texte": "la prod est tombee tout le monde est bloque",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Infrastructure"
+   ],
+   "critique": true,
+   "source": "test_gele"
+  },
+  {
+   "id": "T-039",
+   "texte": "j ai efface un dossier partage par erreur",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Donnees"
+   ],
+   "critique": true,
+   "source": "test_gele"
+  },
+  {
+   "id": "T-040",
+   "texte": "fichier client corrompu impossible a ouvrir",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Donnees"
+   ],
+   "critique": true,
+   "source": "test_gele"
+  },
+  {
+   "id": "T-041",
+   "texte": "je pense que mon compte a ete pirate",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Securite"
+   ],
+   "critique": true,
+   "source": "test_gele"
+  },
+  {
+   "id": "T-042",
+   "texte": "le serveur de fichiers est indisponible",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Infrastructure"
+   ],
+   "critique": true,
+   "source": "test_gele"
+  },
+  {
+   "id": "T-043",
+   "texte": "ou se trouve la machine a cafe",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Inconnu"
+   ],
+   "critique": false,
+   "source": "test_gele"
+  },
+  {
+   "id": "T-044",
+   "texte": "je veux poser mes conges la semaine prochaine",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Inconnu"
+   ],
+   "critique": false,
+   "source": "test_gele"
+  },
+  {
+   "id": "T-045",
+   "texte": "le badge de la porte ne fonctionne plus",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Inconnu"
+   ],
+   "critique": false,
+   "source": "test_gele"
+  },
+  {
+   "id": "T-046",
+   "texte": "quelle est la date de la prochaine reunion d equipe",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Inconnu"
+   ],
+   "critique": false,
+   "source": "test_gele"
+  },
+  {
+   "id": "T-047",
+   "texte": "ma chaise de bureau est cassee",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Inconnu"
+   ],
+   "critique": false,
+   "source": "test_gele"
+  },
+  {
+   "id": "T-048",
+   "texte": "comment changer ma photo sur l intranet",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Inconnu"
+   ],
+   "critique": false,
+   "source": "test_gele"
+  },
+  {
+   "id": "T-049",
+   "texte": "il fait trop chaud dans l open space",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Inconnu"
+   ],
+   "critique": false,
+   "source": "test_gele"
+  },
+  {
+   "id": "T-050",
+   "texte": "besoin d une formation sur excel",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Inconnu"
+   ],
+   "critique": false,
+   "source": "test_gele"
+  }
+ ]
+}

@@ -1,0 +1,2051 @@
+{
+ "description": "Cas SYNTHETIQUES generes par scripts/generer_synthetiques.py (graine 42). Marques 'generes', exclus du jeu gele.",
+ "cas": [
+  {
+   "id": "S-001",
+   "texte": "svp le wifi ne marche plus merci",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Reseau"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-002",
+   "texte": "bonjour, le wifi ne marche plus",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Reseau"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-003",
+   "texte": "le wifi ne marche plus !!!",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Reseau"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-004",
+   "texte": "depuis ce matin le wifi ne marche plus c est bloquant",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Reseau"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-005",
+   "texte": "depuis ce matin le wifi ne marche plus !!!",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Reseau"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-006",
+   "texte": "depuis ce matin le wifi ne marche plus",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Reseau"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-007",
+   "texte": "bonjour, plus d internet !!!",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Reseau"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-008",
+   "texte": "urgent : plus d internet merci",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Reseau"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-009",
+   "texte": "plus d internet pouvez vous m aider",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Reseau"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-010",
+   "texte": "urgent : plus d internet !!!",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Reseau"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-011",
+   "texte": "re-bonjour, plus d internet pouvez vous m aider",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Reseau"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-012",
+   "texte": "plus d internet merci",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Reseau"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-013",
+   "texte": "svp le vpn ne se connecte pas au 2e etage",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Reseau"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-014",
+   "texte": "hello le vpn ne se connecte pas pouvez vous m aider",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Reseau"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-015",
+   "texte": "le vpn ne se connecte pas au 2e etage",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Reseau"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-016",
+   "texte": "le vpn ne se connecte pas !!!",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Reseau"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-017",
+   "texte": "le vpn ne se connecte pas merci",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Reseau"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-018",
+   "texte": "bonjour, le vpn ne se connecte pas pouvez vous m aider",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Reseau"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-019",
+   "texte": "depuis ce matin mon mot de passe est refuse",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Compte / Acces"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-020",
+   "texte": "re-bonjour, mon mot de passe est refuse depuis hier",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Compte / Acces"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-021",
+   "texte": "svp mon mot de passe est refuse c est bloquant",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Compte / Acces"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-022",
+   "texte": "mon mot de passe est refuse !!!",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Compte / Acces"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-023",
+   "texte": "svp mon mot de passe est refuse",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Compte / Acces"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-024",
+   "texte": "bonjour, mon mot de passe est refuse merci",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Compte / Acces"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-025",
+   "texte": "urgent : mon compte est bloque c est bloquant",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Compte / Acces"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-026",
+   "texte": "svp mon compte est bloque pouvez vous m aider",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Compte / Acces"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-027",
+   "texte": "urgent : mon compte est bloque au 2e etage",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Compte / Acces"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-028",
+   "texte": "re-bonjour, mon compte est bloque pouvez vous m aider",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Compte / Acces"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-029",
+   "texte": "hello mon compte est bloque merci",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Compte / Acces"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-030",
+   "texte": "depuis ce matin mon compte est bloque",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Compte / Acces"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-031",
+   "texte": "re-bonjour, je n ai plus acces au dossier partage",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Compte / Acces"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-032",
+   "texte": "svp je n ai plus acces au dossier partage au 2e etage",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Compte / Acces"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-033",
+   "texte": "depuis ce matin je n ai plus acces au dossier partage c est bloquant",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Compte / Acces"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-034",
+   "texte": "je n ai plus acces au dossier partage",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Compte / Acces"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-035",
+   "texte": "bonjour, je n ai plus acces au dossier partage c est bloquant",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Compte / Acces"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-036",
+   "texte": "hello je n ai plus acces au dossier partage pouvez vous m aider",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Compte / Acces"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-037",
+   "texte": "hello outlook ne s ouvre plus",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Messagerie",
+    "Logiciel"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-038",
+   "texte": "depuis ce matin outlook ne s ouvre plus c est bloquant",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Messagerie",
+    "Logiciel"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-039",
+   "texte": "bonjour, outlook ne s ouvre plus au 2e etage",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Messagerie",
+    "Logiciel"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-040",
+   "texte": "bonjour, outlook ne s ouvre plus pouvez vous m aider",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Messagerie",
+    "Logiciel"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-041",
+   "texte": "urgent : outlook ne s ouvre plus pouvez vous m aider",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Messagerie",
+    "Logiciel"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-042",
+   "texte": "outlook ne s ouvre plus pouvez vous m aider",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Messagerie",
+    "Logiciel"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-043",
+   "texte": "je ne recois plus mes mails merci",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Messagerie"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-044",
+   "texte": "hello je ne recois plus mes mails c est bloquant",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Messagerie"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-045",
+   "texte": "je ne recois plus mes mails pouvez vous m aider",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Messagerie"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-046",
+   "texte": "hello je ne recois plus mes mails !!!",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Messagerie"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-047",
+   "texte": "urgent : je ne recois plus mes mails c est bloquant",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Messagerie"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-048",
+   "texte": "svp je ne recois plus mes mails c est bloquant",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Messagerie"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-049",
+   "texte": "depuis ce matin l imprimante ne fonctionne pas au 2e etage",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Materiel"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-050",
+   "texte": "l imprimante ne fonctionne pas au 2e etage",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Materiel"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-051",
+   "texte": "urgent : l imprimante ne fonctionne pas depuis hier",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Materiel"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-052",
+   "texte": "re-bonjour, l imprimante ne fonctionne pas !!!",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Materiel"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-053",
+   "texte": "re-bonjour, l imprimante ne fonctionne pas pouvez vous m aider",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Materiel"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-054",
+   "texte": "bonjour, l imprimante ne fonctionne pas",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Materiel"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-055",
+   "texte": "hello bourrage papier c est bloquant",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Materiel"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-056",
+   "texte": "bourrage papier merci",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Materiel"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-057",
+   "texte": "svp bourrage papier",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Materiel"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-058",
+   "texte": "depuis ce matin bourrage papier depuis hier",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Materiel"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-059",
+   "texte": "svp bourrage papier merci",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Materiel"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-060",
+   "texte": "svp bourrage papier depuis hier",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Materiel"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-061",
+   "texte": "hello mon ecran reste noir au 2e etage",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Materiel"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-062",
+   "texte": "svp mon ecran reste noir !!!",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Materiel"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-063",
+   "texte": "bonjour, mon ecran reste noir merci",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Materiel"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-064",
+   "texte": "urgent : mon ecran reste noir c est bloquant",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Materiel"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-065",
+   "texte": "mon ecran reste noir depuis hier",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Materiel"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-066",
+   "texte": "mon ecran reste noir au 2e etage",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Materiel"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-067",
+   "texte": "urgent : ma souris ne marche plus",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Materiel"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-068",
+   "texte": "depuis ce matin ma souris ne marche plus",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Materiel"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-069",
+   "texte": "depuis ce matin ma souris ne marche plus depuis hier",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Materiel"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-070",
+   "texte": "ma souris ne marche plus merci",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Materiel"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-071",
+   "texte": "urgent : ma souris ne marche plus merci",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Materiel"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-072",
+   "texte": "ma souris ne marche plus pouvez vous m aider",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Materiel"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-073",
+   "texte": "hello mon ordinateur est lent c est bloquant",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Performance"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-074",
+   "texte": "depuis ce matin mon ordinateur est lent c est bloquant",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Performance"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-075",
+   "texte": "re-bonjour, mon ordinateur est lent !!!",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Performance"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-076",
+   "texte": "svp mon ordinateur est lent merci",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Performance"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-077",
+   "texte": "hello mon ordinateur est lent au 2e etage",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Performance"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-078",
+   "texte": "bonjour, mon ordinateur est lent c est bloquant",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Performance"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-079",
+   "texte": "hello le poste rame au 2e etage",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Performance"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-080",
+   "texte": "hello le poste rame !!!",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Performance"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-081",
+   "texte": "bonjour, le poste rame pouvez vous m aider",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Performance"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-082",
+   "texte": "urgent : le poste rame",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Performance"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-083",
+   "texte": "depuis ce matin le poste rame c est bloquant",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Performance"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-084",
+   "texte": "urgent : le poste rame !!!",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Performance"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-085",
+   "texte": "svp le logiciel plante pouvez vous m aider",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Logiciel"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-086",
+   "texte": "le logiciel plante depuis hier",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Logiciel"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-087",
+   "texte": "svp le logiciel plante c est bloquant",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Logiciel"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-088",
+   "texte": "svp le logiciel plante merci",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Logiciel"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-089",
+   "texte": "bonjour, le logiciel plante c est bloquant",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Logiciel"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-090",
+   "texte": "re-bonjour, le logiciel plante pouvez vous m aider",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Logiciel"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-091",
+   "texte": "urgent : l application affiche une erreur depuis hier",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Logiciel"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-092",
+   "texte": "depuis ce matin l application affiche une erreur !!!",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Logiciel"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-093",
+   "texte": "bonjour, l application affiche une erreur c est bloquant",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Logiciel"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-094",
+   "texte": "re-bonjour, l application affiche une erreur !!!",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Logiciel"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-095",
+   "texte": "hello l application affiche une erreur c est bloquant",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Logiciel"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-096",
+   "texte": "depuis ce matin l application affiche une erreur c est bloquant",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Logiciel"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-097",
+   "texte": "svp teams ne marche pas merci",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Collaboration"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-098",
+   "texte": "urgent : teams ne marche pas au 2e etage",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Collaboration"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-099",
+   "texte": "svp teams ne marche pas",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Collaboration"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-100",
+   "texte": "depuis ce matin teams ne marche pas",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Collaboration"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-101",
+   "texte": "urgent : teams ne marche pas !!!",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Collaboration"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-102",
+   "texte": "depuis ce matin teams ne marche pas pouvez vous m aider",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Collaboration"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-103",
+   "texte": "mon micro ne fonctionne pas en visio c est bloquant",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Collaboration"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-104",
+   "texte": "depuis ce matin mon micro ne fonctionne pas en visio",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Collaboration"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-105",
+   "texte": "mon micro ne fonctionne pas en visio au 2e etage",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Collaboration"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-106",
+   "texte": "depuis ce matin mon micro ne fonctionne pas en visio pouvez vous m aider",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Collaboration"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-107",
+   "texte": "hello mon micro ne fonctionne pas en visio depuis hier",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Collaboration"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-108",
+   "texte": "depuis ce matin mon micro ne fonctionne pas en visio c est bloquant",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Collaboration"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-109",
+   "texte": "l intranet ne s affiche pas depuis hier",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Web / Intranet"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-110",
+   "texte": "bonjour, l intranet ne s affiche pas pouvez vous m aider",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Web / Intranet"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-111",
+   "texte": "svp l intranet ne s affiche pas !!!",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Web / Intranet"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-112",
+   "texte": "urgent : l intranet ne s affiche pas c est bloquant",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Web / Intranet"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-113",
+   "texte": "depuis ce matin l intranet ne s affiche pas pouvez vous m aider",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Web / Intranet"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-114",
+   "texte": "urgent : l intranet ne s affiche pas merci",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Web / Intranet"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-115",
+   "texte": "svp chrome ne charge pas les pages pouvez vous m aider",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Web / Intranet"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-116",
+   "texte": "re-bonjour, chrome ne charge pas les pages c est bloquant",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Web / Intranet"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-117",
+   "texte": "hello chrome ne charge pas les pages depuis hier",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Web / Intranet"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-118",
+   "texte": "urgent : chrome ne charge pas les pages pouvez vous m aider",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Web / Intranet"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-119",
+   "texte": "re-bonjour, chrome ne charge pas les pages !!!",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Web / Intranet"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-120",
+   "texte": "bonjour, chrome ne charge pas les pages au 2e etage",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Web / Intranet"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-121",
+   "texte": "depuis ce matin mon telephone ne recoit plus d appels au 2e etage",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Telephonie"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-122",
+   "texte": "bonjour, mon telephone ne recoit plus d appels !!!",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Telephonie"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-123",
+   "texte": "depuis ce matin mon telephone ne recoit plus d appels !!!",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Telephonie"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-124",
+   "texte": "svp mon telephone ne recoit plus d appels",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Telephonie"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-125",
+   "texte": "re-bonjour, mon telephone ne recoit plus d appels pouvez vous m aider",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Telephonie"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-126",
+   "texte": "urgent : mon telephone ne recoit plus d appels pouvez vous m aider",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Telephonie"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-127",
+   "texte": "urgent : le softphone est muet merci",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Telephonie"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-128",
+   "texte": "svp le softphone est muet au 2e etage",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Telephonie"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-129",
+   "texte": "hello le softphone est muet pouvez vous m aider",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Telephonie"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-130",
+   "texte": "urgent : le softphone est muet pouvez vous m aider",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Telephonie"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-131",
+   "texte": "hello le softphone est muet depuis hier",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Telephonie"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-132",
+   "texte": "hello le softphone est muet au 2e etage",
+   "attendu": "RESOLUTION_AUTO",
+   "categories": [
+    "Telephonie"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-133",
+   "texte": "depuis ce matin j ai recu un mail de phishing",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Securite"
+   ],
+   "critique": true,
+   "source": "generes"
+  },
+  {
+   "id": "S-134",
+   "texte": "bonjour, j ai recu un mail de phishing !!!",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Securite"
+   ],
+   "critique": true,
+   "source": "generes"
+  },
+  {
+   "id": "S-135",
+   "texte": "re-bonjour, j ai recu un mail de phishing depuis hier",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Securite"
+   ],
+   "critique": true,
+   "source": "generes"
+  },
+  {
+   "id": "S-136",
+   "texte": "re-bonjour, j ai recu un mail de phishing c est bloquant",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Securite"
+   ],
+   "critique": true,
+   "source": "generes"
+  },
+  {
+   "id": "S-137",
+   "texte": "j ai recu un mail de phishing merci",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Securite"
+   ],
+   "critique": true,
+   "source": "generes"
+  },
+  {
+   "id": "S-138",
+   "texte": "j ai recu un mail de phishing c est bloquant",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Securite"
+   ],
+   "critique": true,
+   "source": "generes"
+  },
+  {
+   "id": "S-139",
+   "texte": "bonjour, un virus a ete detecte",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Securite"
+   ],
+   "critique": true,
+   "source": "generes"
+  },
+  {
+   "id": "S-140",
+   "texte": "bonjour, un virus a ete detecte au 2e etage",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Securite"
+   ],
+   "critique": true,
+   "source": "generes"
+  },
+  {
+   "id": "S-141",
+   "texte": "svp un virus a ete detecte merci",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Securite"
+   ],
+   "critique": true,
+   "source": "generes"
+  },
+  {
+   "id": "S-142",
+   "texte": "bonjour, un virus a ete detecte c est bloquant",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Securite"
+   ],
+   "critique": true,
+   "source": "generes"
+  },
+  {
+   "id": "S-143",
+   "texte": "urgent : un virus a ete detecte !!!",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Securite"
+   ],
+   "critique": true,
+   "source": "generes"
+  },
+  {
+   "id": "S-144",
+   "texte": "hello un virus a ete detecte pouvez vous m aider",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Securite"
+   ],
+   "critique": true,
+   "source": "generes"
+  },
+  {
+   "id": "S-145",
+   "texte": "svp mon compte a ete pirate c est bloquant",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Securite"
+   ],
+   "critique": true,
+   "source": "generes"
+  },
+  {
+   "id": "S-146",
+   "texte": "mon compte a ete pirate depuis hier",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Securite"
+   ],
+   "critique": true,
+   "source": "generes"
+  },
+  {
+   "id": "S-147",
+   "texte": "hello mon compte a ete pirate c est bloquant",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Securite"
+   ],
+   "critique": true,
+   "source": "generes"
+  },
+  {
+   "id": "S-148",
+   "texte": "urgent : mon compte a ete pirate depuis hier",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Securite"
+   ],
+   "critique": true,
+   "source": "generes"
+  },
+  {
+   "id": "S-149",
+   "texte": "urgent : mon compte a ete pirate pouvez vous m aider",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Securite"
+   ],
+   "critique": true,
+   "source": "generes"
+  },
+  {
+   "id": "S-150",
+   "texte": "re-bonjour, mon compte a ete pirate !!!",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Securite"
+   ],
+   "critique": true,
+   "source": "generes"
+  },
+  {
+   "id": "S-151",
+   "texte": "re-bonjour, on m a vole mon portable merci",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Securite"
+   ],
+   "critique": true,
+   "source": "generes"
+  },
+  {
+   "id": "S-152",
+   "texte": "depuis ce matin on m a vole mon portable au 2e etage",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Securite"
+   ],
+   "critique": true,
+   "source": "generes"
+  },
+  {
+   "id": "S-153",
+   "texte": "svp on m a vole mon portable",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Securite"
+   ],
+   "critique": true,
+   "source": "generes"
+  },
+  {
+   "id": "S-154",
+   "texte": "on m a vole mon portable",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Securite"
+   ],
+   "critique": true,
+   "source": "generes"
+  },
+  {
+   "id": "S-155",
+   "texte": "urgent : on m a vole mon portable !!!",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Securite"
+   ],
+   "critique": true,
+   "source": "generes"
+  },
+  {
+   "id": "S-156",
+   "texte": "bonjour, on m a vole mon portable",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Securite"
+   ],
+   "critique": true,
+   "source": "generes"
+  },
+  {
+   "id": "S-157",
+   "texte": "urgent : le serveur est down pour tout le monde !!!",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Infrastructure"
+   ],
+   "critique": true,
+   "source": "generes"
+  },
+  {
+   "id": "S-158",
+   "texte": "re-bonjour, le serveur est down pour tout le monde pouvez vous m aider",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Infrastructure"
+   ],
+   "critique": true,
+   "source": "generes"
+  },
+  {
+   "id": "S-159",
+   "texte": "depuis ce matin le serveur est down pour tout le monde c est bloquant",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Infrastructure"
+   ],
+   "critique": true,
+   "source": "generes"
+  },
+  {
+   "id": "S-160",
+   "texte": "svp le serveur est down pour tout le monde pouvez vous m aider",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Infrastructure"
+   ],
+   "critique": true,
+   "source": "generes"
+  },
+  {
+   "id": "S-161",
+   "texte": "hello le serveur est down pour tout le monde",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Infrastructure"
+   ],
+   "critique": true,
+   "source": "generes"
+  },
+  {
+   "id": "S-162",
+   "texte": "bonjour, le serveur est down pour tout le monde",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Infrastructure"
+   ],
+   "critique": true,
+   "source": "generes"
+  },
+  {
+   "id": "S-163",
+   "texte": "depuis ce matin plus personne n a acces a la production depuis hier",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Infrastructure"
+   ],
+   "critique": true,
+   "source": "generes"
+  },
+  {
+   "id": "S-164",
+   "texte": "hello plus personne n a acces a la production pouvez vous m aider",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Infrastructure"
+   ],
+   "critique": true,
+   "source": "generes"
+  },
+  {
+   "id": "S-165",
+   "texte": "bonjour, plus personne n a acces a la production c est bloquant",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Infrastructure"
+   ],
+   "critique": true,
+   "source": "generes"
+  },
+  {
+   "id": "S-166",
+   "texte": "re-bonjour, plus personne n a acces a la production !!!",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Infrastructure"
+   ],
+   "critique": true,
+   "source": "generes"
+  },
+  {
+   "id": "S-167",
+   "texte": "plus personne n a acces a la production",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Infrastructure"
+   ],
+   "critique": true,
+   "source": "generes"
+  },
+  {
+   "id": "S-168",
+   "texte": "depuis ce matin plus personne n a acces a la production au 2e etage",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Infrastructure"
+   ],
+   "critique": true,
+   "source": "generes"
+  },
+  {
+   "id": "S-169",
+   "texte": "re-bonjour, j ai supprime des fichiers par erreur depuis hier",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Donnees"
+   ],
+   "critique": true,
+   "source": "generes"
+  },
+  {
+   "id": "S-170",
+   "texte": "bonjour, j ai supprime des fichiers par erreur depuis hier",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Donnees"
+   ],
+   "critique": true,
+   "source": "generes"
+  },
+  {
+   "id": "S-171",
+   "texte": "urgent : j ai supprime des fichiers par erreur pouvez vous m aider",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Donnees"
+   ],
+   "critique": true,
+   "source": "generes"
+  },
+  {
+   "id": "S-172",
+   "texte": "j ai supprime des fichiers par erreur pouvez vous m aider",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Donnees"
+   ],
+   "critique": true,
+   "source": "generes"
+  },
+  {
+   "id": "S-173",
+   "texte": "svp j ai supprime des fichiers par erreur merci",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Donnees"
+   ],
+   "critique": true,
+   "source": "generes"
+  },
+  {
+   "id": "S-174",
+   "texte": "depuis ce matin j ai supprime des fichiers par erreur merci",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Donnees"
+   ],
+   "critique": true,
+   "source": "generes"
+  },
+  {
+   "id": "S-175",
+   "texte": "svp le fichier est corrompu merci",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Donnees"
+   ],
+   "critique": true,
+   "source": "generes"
+  },
+  {
+   "id": "S-176",
+   "texte": "re-bonjour, le fichier est corrompu depuis hier",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Donnees"
+   ],
+   "critique": true,
+   "source": "generes"
+  },
+  {
+   "id": "S-177",
+   "texte": "svp le fichier est corrompu c est bloquant",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Donnees"
+   ],
+   "critique": true,
+   "source": "generes"
+  },
+  {
+   "id": "S-178",
+   "texte": "bonjour, le fichier est corrompu merci",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Donnees"
+   ],
+   "critique": true,
+   "source": "generes"
+  },
+  {
+   "id": "S-179",
+   "texte": "bonjour, le fichier est corrompu au 2e etage",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Donnees"
+   ],
+   "critique": true,
+   "source": "generes"
+  },
+  {
+   "id": "S-180",
+   "texte": "hello le fichier est corrompu au 2e etage",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Donnees"
+   ],
+   "critique": true,
+   "source": "generes"
+  },
+  {
+   "id": "S-181",
+   "texte": "urgent : ou est la machine a cafe pouvez vous m aider",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Inconnu"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-182",
+   "texte": "bonjour, ou est la machine a cafe c est bloquant",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Inconnu"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-183",
+   "texte": "re-bonjour, ou est la machine a cafe pouvez vous m aider",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Inconnu"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-184",
+   "texte": "re-bonjour, ou est la machine a cafe merci",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Inconnu"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-185",
+   "texte": "ou est la machine a cafe",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Inconnu"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-186",
+   "texte": "svp ou est la machine a cafe c est bloquant",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Inconnu"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-187",
+   "texte": "depuis ce matin je veux poser des conges pouvez vous m aider",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Inconnu"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-188",
+   "texte": "re-bonjour, je veux poser des conges c est bloquant",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Inconnu"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-189",
+   "texte": "je veux poser des conges !!!",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Inconnu"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-190",
+   "texte": "bonjour, je veux poser des conges",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Inconnu"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-191",
+   "texte": "hello je veux poser des conges au 2e etage",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Inconnu"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-192",
+   "texte": "depuis ce matin je veux poser des conges merci",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Inconnu"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-193",
+   "texte": "depuis ce matin ma chaise est cassee !!!",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Inconnu"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-194",
+   "texte": "ma chaise est cassee c est bloquant",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Inconnu"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-195",
+   "texte": "urgent : ma chaise est cassee pouvez vous m aider",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Inconnu"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-196",
+   "texte": "svp ma chaise est cassee !!!",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Inconnu"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-197",
+   "texte": "ma chaise est cassee merci",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Inconnu"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-198",
+   "texte": "urgent : ma chaise est cassee au 2e etage",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Inconnu"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-199",
+   "texte": "urgent : besoin d une formation depuis hier",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Inconnu"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-200",
+   "texte": "re-bonjour, besoin d une formation c est bloquant",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Inconnu"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-201",
+   "texte": "besoin d une formation depuis hier",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Inconnu"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-202",
+   "texte": "re-bonjour, besoin d une formation pouvez vous m aider",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Inconnu"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-203",
+   "texte": "bonjour, besoin d une formation !!!",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Inconnu"
+   ],
+   "critique": false,
+   "source": "generes"
+  },
+  {
+   "id": "S-204",
+   "texte": "urgent : besoin d une formation au 2e etage",
+   "attendu": "ESCALADE",
+   "categories": [
+    "Inconnu"
+   ],
+   "critique": false,
+   "source": "generes"
+  }
+ ]
+}

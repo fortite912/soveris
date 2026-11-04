@@ -1,0 +1,78 @@
+{
+ "horodatage": "2026-11-04T13:17:53",
+ "commit": "e18345c",
+ "jeux": {
+  "test": {
+   "total": 50,
+   "corrects": 46,
+   "precision": 92.0,
+   "erreurs_critiques": 1,
+   "critiques_mal_orientees": 0,
+   "incertains": 37,
+   "par_classe": {
+    "Reseau": 100.0,
+    "Compte / Acces": 100.0,
+    "Messagerie": 66.7,
+    "Materiel": 85.7,
+    "Performance": 50.0,
+    "Collaboration": 100.0,
+    "Logiciel": 100.0,
+    "Web / Intranet": 100.0,
+    "Telephonie": 100.0,
+    "Securite": 100.0,
+    "Infrastructure": 100.0,
+    "Donnees": 100.0,
+    "Inconnu": 87.5
+   },
+   "latence_p95_ms": 0.772
+  },
+  "dev": {
+   "total": 83,
+   "corrects": 68,
+   "precision": 81.9,
+   "erreurs_critiques": 6,
+   "critiques_mal_orientees": 3,
+   "incertains": 51,
+   "par_classe": {
+    "Reseau": 100.0,
+    "Compte / Acces": 87.5,
+    "Messagerie": 66.7,
+    "Materiel": 90.0,
+    "Performance": 80.0,
+    "Logiciel": 83.3,
+    "Collaboration": 60.0,
+    "Web / Intranet": 75.0,
+    "Telephonie": 100.0,
+    "Securite": 75.0,
+    "Infrastructure": 100.0,
+    "Donnees": 60.0,
+    "Inconnu": 80.0
+   },
+   "latence_p95_ms": 0.839
+  },
+  "synthetique": {
+   "total": 204,
+   "corrects": 204,
+   "precision": 100.0,
+   "erreurs_critiques": 0,
+   "critiques_mal_orientees": 0,
+   "incertains": 150,
+   "par_classe": {
+    "Reseau": 100.0,
+    "Compte / Acces": 100.0,
+    "Messagerie": 100.0,
+    "Materiel": 100.0,
+    "Performance": 100.0,
+    "Logiciel": 100.0,
+    "Collaboration": 100.0,
+    "Web / Intranet": 100.0,
+    "Telephonie": 100.0,
+    "Securite": 100.0,
+    "Infrastructure": 100.0,
+    "Donnees": 100.0,
+    "Inconnu": 100.0
+   },
+   "latence_p95_ms": 0.992
+  }
+ }
+}

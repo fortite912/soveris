@@ -1,0 +1,1146 @@
+{
+ "jeu": "dev",
+ "horodatage": "2026-11-04T13:17:55",
+ "total": 83,
+ "corrects": 68,
+ "precision": 81.9,
+ "verdicts": {
+  "CORRECT": 68,
+  "MANQUE": 7,
+  "MAL_CATEGORISE": 2,
+  "FAUSSE_DANGEREUSE": 4,
+  "FAUSSE_HORS_PERIMETRE": 2
+ },
+ "erreurs_critiques": 6,
+ "critiques_mal_orientees": 3,
+ "incertains": 51,
+ "latence_ms": {
+  "mediane": 0.313,
+  "p95": 0.402,
+  "max": 0.625,
+  "total_jeu": 27.3
+ },
+ "par_classe": {
+  "Reseau": {
+   "total": 7,
+   "corrects": 7,
+   "erreurs": [],
+   "precision": 100.0
+  },
+  "Compte / Acces": {
+   "total": 8,
+   "corrects": 7,
+   "erreurs": [
+    {
+     "id": "D-015",
+     "texte": "pouvez vous reinitialiser mon mdp svp",
+     "verdict": "MANQUE",
+     "obtenu": "ESCALADE / Inconnu"
+    }
+   ],
+   "precision": 87.5
+  },
+  "Messagerie": {
+   "total": 6,
+   "corrects": 4,
+   "erreurs": [
+    {
+     "id": "D-018",
+     "texte": "mes courriels arrivent avec plusieurs heures de retard",
+     "verdict": "MANQUE",
+     "obtenu": "ESCALADE / Inconnu"
+    },
+    {
+     "id": "D-021",
+     "texte": "je ne recois plus les emails de mes collegues",
+     "verdict": "MANQUE",
+     "obtenu": "ESCALADE / Inconnu"
+    }
+   ],
+   "precision": 66.7
+  },
+  "Materiel": {
+   "total": 10,
+   "corrects": 9,
+   "erreurs": [
+    {
+     "id": "D-031",
+     "texte": "les imprimantes du 3e ne repondent plus",
+     "verdict": "MANQUE",
+     "obtenu": "ESCALADE / Inconnu"
+    }
+   ],
+   "precision": 90.0
+  },
+  "Performance": {
+   "total": 5,
+   "corrects": 4,
+   "erreurs": [
+    {
+     "id": "D-035",
+     "texte": "tout est lent sur mon pc aujourd hui",
+     "verdict": "MANQUE",
+     "obtenu": "ESCALADE / Infrastructure"
+    }
+   ],
+   "precision": 80.0
+  },
+  "Logiciel": {
+   "total": 6,
+   "corrects": 5,
+   "erreurs": [
+    {
+     "id": "D-042",
+     "texte": "les applis se ferment toutes seules",
+     "verdict": "MANQUE",
+     "obtenu": "ESCALADE / Inconnu"
+    }
+   ],
+   "precision": 83.3
+  },
+  "Collaboration": {
+   "total": 5,
+   "corrects": 3,
+   "erreurs": [
+    {
+     "id": "D-044",
+     "texte": "personne ne m entend en visio",
+     "verdict": "MANQUE",
+     "obtenu": "ESCALADE / Infrastructure"
+    },
+    {
+     "id": "D-045",
+     "texte": "le partage d ecran ne fonctionne pas sur zoom",
+     "verdict": "MAL_CATEGORISE",
+     "obtenu": "RESOLUTION_AUTO / Compte / Acces"
+    }
+   ],
+   "precision": 60.0
+  },
+  "Web / Intranet": {
+   "total": 4,
+   "corrects": 3,
+   "erreurs": [
+    {
+     "id": "D-051",
+     "texte": "le portail rh ne s ouvre pas dans firefox",
+     "verdict": "MAL_CATEGORISE",
+     "obtenu": "RESOLUTION_AUTO / Logiciel"
+    }
+   ],
+   "precision": 75.0
+  },
+  "Telephonie": {
+   "total": 4,
+   "corrects": 4,
+   "erreurs": [],
+   "precision": 100.0
+  },
+  "Securite": {
+   "total": 8,
+   "corrects": 6,
+   "erreurs": [
+    {
+     "id": "D-062",
+     "texte": "on m a piratee, mes contacts recoivent des mails de moi",
+     "verdict": "FAUSSE_DANGEREUSE",
+     "obtenu": "RESOLUTION_AUTO / Messagerie"
+    },
+    {
+     "id": "D-063",
+     "texte": "un faux site de la banque me demande mon mot de passe",
+     "verdict": "FAUSSE_DANGEREUSE",
+     "obtenu": "RESOLUTION_AUTO / Compte / Acces"
+    }
+   ],
+   "precision": 75.0
+  },
+  "Infrastructure": {
+   "total": 5,
+   "corrects": 5,
+   "erreurs": [],
+   "precision": 100.0
+  },
+  "Donnees": {
+   "total": 5,
+   "corrects": 3,
+   "erreurs": [
+    {
+     "id": "D-071",
+     "texte": "tous mes documents ont disparu du lecteur partage",
+     "verdict": "FAUSSE_DANGEREUSE",
+     "obtenu": "RESOLUTION_AUTO / Compte / Acces"
+    },
+    {
+     "id": "D-073",
+     "texte": "mon disque dur fait un bruit bizarre et des fichiers sont illisibles",
+     "verdict": "FAUSSE_DANGEREUSE",
+     "obtenu": "RESOLUTION_AUTO / Compte / Acces"
+    }
+   ],
+   "precision": 60.0
+  },
+  "Inconnu": {
+   "total": 10,
+   "corrects": 8,
+   "erreurs": [
+    {
+     "id": "D-076",
+     "texte": "mon badge ne passe plus a l entree",
+     "verdict": "FAUSSE_HORS_PERIMETRE",
+     "obtenu": "RESOLUTION_AUTO / Compte / Acces"
+    },
+    {
+     "id": "D-077",
+     "texte": "je souhaite poser un jour de teletravail",
+     "verdict": "FAUSSE_HORS_PERIMETRE",
+     "obtenu": "RESOLUTION_AUTO / Reseau"
+    }
+   ],
+   "precision": 80.0
+  }
+ },
+ "matrice_confusion": {
+  "Reseau": {
+   "Reseau": 7
+  },
+  "Compte / Acces": {
+   "Compte / Acces": 6,
+   "Reseau": 1,
+   "Inconnu": 1
+  },
+  "Messagerie": {
+   "Messagerie": 4,
+   "Inconnu": 2
+  },
+  "Materiel": {
+   "Materiel": 9,
+   "Inconnu": 1
+  },
+  "Performance": {
+   "Performance": 4,
+   "Infrastructure": 1
+  },
+  "Logiciel": {
+   "Logiciel": 5,
+   "Inconnu": 1
+  },
+  "Collaboration": {
+   "Collaboration": 3,
+   "Infrastructure": 1,
+   "Compte / Acces": 1
+  },
+  "Web / Intranet": {
+   "Web / Intranet": 3,
+   "Logiciel": 1
+  },
+  "Telephonie": {
+   "Telephonie": 4
+  },
+  "Securite": {
+   "Infrastructure": 1,
+   "Inconnu": 2,
+   "Securite": 3,
+   "Messagerie": 1,
+   "Compte / Acces": 1
+  },
+  "Infrastructure": {
+   "Infrastructure": 5
+  },
+  "Donnees": {
+   "Donnees": 3,
+   "Compte / Acces": 2
+  },
+  "Inconnu": {
+   "Inconnu": 7,
+   "Compte / Acces": 1,
+   "Reseau": 1,
+   "Infrastructure": 1
+  }
+ },
+ "details_critiques": [
+  {
+   "id": "D-062",
+   "texte": "on m a piratee, mes contacts recoivent des mails de moi",
+   "source": "dev",
+   "attendu": "ESCALADE",
+   "categories_attendues": [
+    "Securite"
+   ],
+   "critique": true,
+   "decision": "RESOLUTION_AUTO",
+   "categorie": "Messagerie",
+   "score": 1,
+   "confiance": "MOYENNE",
+   "mots_reconnus": [
+    "mails"
+   ],
+   "ambigu": false,
+   "incertain": true,
+   "verdict": "FAUSSE_DANGEREUSE",
+   "categorie_correcte": false,
+   "temps_ms": 0.37
+  },
+  {
+   "id": "D-063",
+   "texte": "un faux site de la banque me demande mon mot de passe",
+   "source": "dev",
+   "attendu": "ESCALADE",
+   "categories_attendues": [
+    "Securite"
+   ],
+   "critique": true,
+   "decision": "RESOLUTION_AUTO",
+   "categorie": "Compte / Acces",
+   "score": 2,
+   "confiance": "HAUTE",
+   "mots_reconnus": [
+    "mot",
+    "passe"
+   ],
+   "ambigu": false,
+   "incertain": false,
+   "verdict": "FAUSSE_DANGEREUSE",
+   "categorie_correcte": false,
+   "temps_ms": 0.316
+  },
+  {
+   "id": "D-071",
+   "texte": "tous mes documents ont disparu du lecteur partage",
+   "source": "dev",
+   "attendu": "ESCALADE",
+   "categories_attendues": [
+    "Donnees"
+   ],
+   "critique": true,
+   "decision": "RESOLUTION_AUTO",
+   "categorie": "Compte / Acces",
+   "score": 2,
+   "confiance": "HAUTE",
+   "mots_reconnus": [
+    "partage",
+    "lecteur"
+   ],
+   "ambigu": false,
+   "incertain": false,
+   "verdict": "FAUSSE_DANGEREUSE",
+   "categorie_correcte": false,
+   "temps_ms": 0.296
+  },
+  {
+   "id": "D-073",
+   "texte": "mon disque dur fait un bruit bizarre et des fichiers sont illisibles",
+   "source": "dev",
+   "attendu": "ESCALADE",
+   "categories_attendues": [
+    "Donnees",
+    "Materiel"
+   ],
+   "critique": true,
+   "decision": "RESOLUTION_AUTO",
+   "categorie": "Compte / Acces",
+   "score": 1,
+   "confiance": "MOYENNE",
+   "mots_reconnus": [
+    "disque"
+   ],
+   "ambigu": false,
+   "incertain": true,
+   "verdict": "FAUSSE_DANGEREUSE",
+   "categorie_correcte": false,
+   "temps_ms": 0.349
+  },
+  {
+   "id": "D-076",
+   "texte": "mon badge ne passe plus a l entree",
+   "source": "dev",
+   "attendu": "ESCALADE",
+   "categories_attendues": [
+    "Inconnu"
+   ],
+   "critique": false,
+   "decision": "RESOLUTION_AUTO",
+   "categorie": "Compte / Acces",
+   "score": 1,
+   "confiance": "MOYENNE",
+   "mots_reconnus": [
+    "passe"
+   ],
+   "ambigu": false,
+   "incertain": true,
+   "verdict": "FAUSSE_HORS_PERIMETRE",
+   "categorie_correcte": false,
+   "temps_ms": 0.272
+  },
+  {
+   "id": "D-077",
+   "texte": "je souhaite poser un jour de teletravail",
+   "source": "dev",
+   "attendu": "ESCALADE",
+   "categories_attendues": [
+    "Inconnu"
+   ],
+   "critique": false,
+   "decision": "RESOLUTION_AUTO",
+   "categorie": "Reseau",
+   "score": 1,
+   "confiance": "MOYENNE",
+   "mots_reconnus": [
+    "teletravail"
+   ],
+   "ambigu": false,
+   "incertain": true,
+   "verdict": "FAUSSE_HORS_PERIMETRE",
+   "categorie_correcte": false,
+   "temps_ms": 0.302
+  }
+ ],
+ "details_critiques_mal_orientees": [
+  {
+   "id": "D-056",
+   "texte": "j ai clique sur un lien dans un mail bizarre et maintenant tout est chiffre",
+   "source": "dev",
+   "attendu": "ESCALADE",
+   "categories_attendues": [
+    "Securite"
+   ],
+   "critique": true,
+   "decision": "ESCALADE",
+   "categorie": "Infrastructure",
+   "score": 1,
+   "confiance": "MOYENNE",
+   "mots_reconnus": [
+    "tout"
+   ],
+   "ambigu": true,
+   "incertain": true,
+   "verdict": "CORRECT",
+   "categorie_correcte": false,
+   "temps_ms": 0.402
+  },
+  {
+   "id": "D-057",
+   "texte": "quelqu un a utilise mon compte pendant mes vacances",
+   "source": "dev",
+   "attendu": "ESCALADE",
+   "categories_attendues": [
+    "Securite"
+   ],
+   "critique": true,
+   "decision": "ESCALADE",
+   "categorie": "Inconnu",
+   "score": 0,
+   "confiance": "NULLE",
+   "mots_reconnus": [],
+   "ambigu": false,
+   "incertain": true,
+   "verdict": "CORRECT",
+   "categorie_correcte": false,
+   "temps_ms": 0.316
+  },
+  {
+   "id": "D-058",
+   "texte": "l antivirus a trouve un cheval de troie",
+   "source": "dev",
+   "attendu": "ESCALADE",
+   "categories_attendues": [
+    "Securite"
+   ],
+   "critique": true,
+   "decision": "ESCALADE",
+   "categorie": "Inconnu",
+   "score": 0,
+   "confiance": "NULLE",
+   "mots_reconnus": [],
+   "ambigu": false,
+   "incertain": true,
+   "verdict": "CORRECT",
+   "categorie_correcte": false,
+   "temps_ms": 0.28
+  }
+ ],
+ "details_incertains": [
+  {
+   "id": "D-001",
+   "texte": "bonjour le wifi de mon bureau ne fonctionne plus depuis ce matin",
+   "obtenu": "RESOLUTION_AUTO / Reseau",
+   "score": 1,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-007",
+   "texte": "la connexion est tres instable en salle 204",
+   "obtenu": "RESOLUTION_AUTO / Reseau",
+   "score": 1,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-009",
+   "texte": "mon compte est verrouille apres 3 tentatives",
+   "obtenu": "RESOLUTION_AUTO / Compte / Acces",
+   "score": 1,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-013",
+   "texte": "le lecteur reseau P n apparait plus dans mon explorateur",
+   "obtenu": "RESOLUTION_AUTO / Reseau",
+   "score": 1,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-015",
+   "texte": "pouvez vous reinitialiser mon mdp svp",
+   "obtenu": "ESCALADE / Inconnu",
+   "score": 0,
+   "verdict": "MANQUE"
+  },
+  {
+   "id": "D-016",
+   "texte": "outlook ne se synchronise plus",
+   "obtenu": "RESOLUTION_AUTO / Messagerie",
+   "score": 1,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-018",
+   "texte": "mes courriels arrivent avec plusieurs heures de retard",
+   "obtenu": "ESCALADE / Inconnu",
+   "score": 0,
+   "verdict": "MANQUE"
+  },
+  {
+   "id": "D-021",
+   "texte": "je ne recois plus les emails de mes collegues",
+   "obtenu": "ESCALADE / Inconnu",
+   "score": 0,
+   "verdict": "MANQUE"
+  },
+  {
+   "id": "D-024",
+   "texte": "impossible d imprimer depuis mon poste, le document reste en attente",
+   "obtenu": "RESOLUTION_AUTO / Materiel",
+   "score": 1,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-025",
+   "texte": "le scanner ne numerise plus en recto verso",
+   "obtenu": "RESOLUTION_AUTO / Materiel",
+   "score": 1,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-026",
+   "texte": "mon deuxieme ecran reste noir",
+   "obtenu": "RESOLUTION_AUTO / Materiel",
+   "score": 1,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-027",
+   "texte": "ma souris sans fil ne reagit plus",
+   "obtenu": "RESOLUTION_AUTO / Materiel",
+   "score": 1,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-028",
+   "texte": "le clavier de mon portable a des touches qui ne repondent pas",
+   "obtenu": "RESOLUTION_AUTO / Materiel",
+   "score": 1,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-029",
+   "texte": "la webcam n est pas detectee",
+   "obtenu": "RESOLUTION_AUTO / Materiel",
+   "score": 1,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-030",
+   "texte": "ma cle usb n est pas reconnue",
+   "obtenu": "RESOLUTION_AUTO / Materiel",
+   "score": 1,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-031",
+   "texte": "les imprimantes du 3e ne repondent plus",
+   "obtenu": "ESCALADE / Inconnu",
+   "score": 0,
+   "verdict": "MANQUE"
+  },
+  {
+   "id": "D-032",
+   "texte": "mon ordinateur est devenu tres lent",
+   "obtenu": "RESOLUTION_AUTO / Performance",
+   "score": 1,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-033",
+   "texte": "excel se fige des que j ouvre un gros fichier",
+   "obtenu": "RESOLUTION_AUTO / Performance",
+   "score": 1,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-034",
+   "texte": "mon poste rame enormement depuis la derniere mise a jour",
+   "obtenu": "RESOLUTION_AUTO / Performance",
+   "score": 1,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-035",
+   "texte": "tout est lent sur mon pc aujourd hui",
+   "obtenu": "ESCALADE / Infrastructure",
+   "score": 1,
+   "verdict": "MANQUE"
+  },
+  {
+   "id": "D-036",
+   "texte": "le ventilateur tourne a fond et le pc est lent",
+   "obtenu": "RESOLUTION_AUTO / Performance",
+   "score": 1,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-037",
+   "texte": "word plante a chaque ouverture",
+   "obtenu": "RESOLUTION_AUTO / Logiciel",
+   "score": 1,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-041",
+   "texte": "message d erreur au lancement d acrobat",
+   "obtenu": "RESOLUTION_AUTO / Logiciel",
+   "score": 1,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-042",
+   "texte": "les applis se ferment toutes seules",
+   "obtenu": "ESCALADE / Inconnu",
+   "score": 0,
+   "verdict": "MANQUE"
+  },
+  {
+   "id": "D-044",
+   "texte": "personne ne m entend en visio",
+   "obtenu": "ESCALADE / Infrastructure",
+   "score": 1,
+   "verdict": "MANQUE"
+  },
+  {
+   "id": "D-045",
+   "texte": "le partage d ecran ne fonctionne pas sur zoom",
+   "obtenu": "RESOLUTION_AUTO / Compte / Acces",
+   "score": 1,
+   "verdict": "MAL_CATEGORISE"
+  },
+  {
+   "id": "D-047",
+   "texte": "je n arrive pas a rejoindre la reunion en ligne",
+   "obtenu": "RESOLUTION_AUTO / Collaboration",
+   "score": 1,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-048",
+   "texte": "l intranet ne charge pas",
+   "obtenu": "RESOLUTION_AUTO / Web / Intranet",
+   "score": 1,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-049",
+   "texte": "chrome affiche une page blanche sur tous les sites",
+   "obtenu": "RESOLUTION_AUTO / Web / Intranet",
+   "score": 1,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-051",
+   "texte": "le portail rh ne s ouvre pas dans firefox",
+   "obtenu": "RESOLUTION_AUTO / Logiciel",
+   "score": 1,
+   "verdict": "MAL_CATEGORISE"
+  },
+  {
+   "id": "D-052",
+   "texte": "mon telephone fixe n a plus de tonalite",
+   "obtenu": "RESOLUTION_AUTO / Telephonie",
+   "score": 1,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-053",
+   "texte": "le softphone ne sonne plus",
+   "obtenu": "RESOLUTION_AUTO / Telephonie",
+   "score": 1,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-054",
+   "texte": "je ne peux plus passer d appels depuis mon mobile pro",
+   "obtenu": "RESOLUTION_AUTO / Telephonie",
+   "score": 1,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-056",
+   "texte": "j ai clique sur un lien dans un mail bizarre et maintenant tout est chiffre",
+   "obtenu": "ESCALADE / Infrastructure",
+   "score": 1,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-057",
+   "texte": "quelqu un a utilise mon compte pendant mes vacances",
+   "obtenu": "ESCALADE / Inconnu",
+   "score": 0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-058",
+   "texte": "l antivirus a trouve un cheval de troie",
+   "obtenu": "ESCALADE / Inconnu",
+   "score": 0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-059",
+   "texte": "un collegue a recu un sms qui demande mes identifiants",
+   "obtenu": "ESCALADE / Securite",
+   "score": 1,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-060",
+   "texte": "mon ordinateur portable a ete vole ce week end",
+   "obtenu": "ESCALADE / Securite",
+   "score": 1,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-061",
+   "texte": "je recois des mails d arnaque au president",
+   "obtenu": "ESCALADE / Securite",
+   "score": 1,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-062",
+   "texte": "on m a piratee, mes contacts recoivent des mails de moi",
+   "obtenu": "RESOLUTION_AUTO / Messagerie",
+   "score": 1,
+   "verdict": "FAUSSE_DANGEREUSE"
+  },
+  {
+   "id": "D-073",
+   "texte": "mon disque dur fait un bruit bizarre et des fichiers sont illisibles",
+   "obtenu": "RESOLUTION_AUTO / Compte / Acces",
+   "score": 1,
+   "verdict": "FAUSSE_DANGEREUSE"
+  },
+  {
+   "id": "D-074",
+   "texte": "je voudrais commander une nouvelle chaise",
+   "obtenu": "ESCALADE / Inconnu",
+   "score": 0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-075",
+   "texte": "a quelle heure ferme le parking",
+   "obtenu": "ESCALADE / Inconnu",
+   "score": 0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-076",
+   "texte": "mon badge ne passe plus a l entree",
+   "obtenu": "RESOLUTION_AUTO / Compte / Acces",
+   "score": 1,
+   "verdict": "FAUSSE_HORS_PERIMETRE"
+  },
+  {
+   "id": "D-077",
+   "texte": "je souhaite poser un jour de teletravail",
+   "obtenu": "RESOLUTION_AUTO / Reseau",
+   "score": 1,
+   "verdict": "FAUSSE_HORS_PERIMETRE"
+  },
+  {
+   "id": "D-078",
+   "texte": "il n y a plus de gobelets a la machine a cafe",
+   "obtenu": "ESCALADE / Inconnu",
+   "score": 0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-079",
+   "texte": "comment faire une note de frais",
+   "obtenu": "ESCALADE / Inconnu",
+   "score": 0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-080",
+   "texte": "je voudrais une formation powerpoint",
+   "obtenu": "ESCALADE / Inconnu",
+   "score": 0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-081",
+   "texte": "la climatisation est en panne au 2e etage",
+   "obtenu": "ESCALADE / Infrastructure",
+   "score": 1,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-082",
+   "texte": "quel est le numero de la medecine du travail",
+   "obtenu": "ESCALADE / Inconnu",
+   "score": 0,
+   "verdict": "CORRECT"
+  },
+  {
+   "id": "D-083",
+   "texte": "pouvez vous changer la photo de mon profil sur l annuaire",
+   "obtenu": "ESCALADE / Inconnu",
+   "score": 0,
+   "verdict": "CORRECT"
+  }
+ ],
+ "erreurs": [
+  {
+   "id": "D-015",
+   "texte": "pouvez vous reinitialiser mon mdp svp",
+   "source": "dev",
+   "attendu": "RESOLUTION_AUTO",
+   "categories_attendues": [
+    "Compte / Acces"
+   ],
+   "critique": false,
+   "decision": "ESCALADE",
+   "categorie": "Inconnu",
+   "score": 0,
+   "confiance": "NULLE",
+   "mots_reconnus": [],
+   "ambigu": false,
+   "incertain": true,
+   "verdict": "MANQUE",
+   "categorie_correcte": false,
+   "temps_ms": 0.303
+  },
+  {
+   "id": "D-018",
+   "texte": "mes courriels arrivent avec plusieurs heures de retard",
+   "source": "dev",
+   "attendu": "RESOLUTION_AUTO",
+   "categories_attendues": [
+    "Messagerie"
+   ],
+   "critique": false,
+   "decision": "ESCALADE",
+   "categorie": "Inconnu",
+   "score": 0,
+   "confiance": "NULLE",
+   "mots_reconnus": [],
+   "ambigu": false,
+   "incertain": true,
+   "verdict": "MANQUE",
+   "categorie_correcte": false,
+   "temps_ms": 0.337
+  },
+  {
+   "id": "D-021",
+   "texte": "je ne recois plus les emails de mes collegues",
+   "source": "dev",
+   "attendu": "RESOLUTION_AUTO",
+   "categories_attendues": [
+    "Messagerie"
+   ],
+   "critique": false,
+   "decision": "ESCALADE",
+   "categorie": "Inconnu",
+   "score": 0,
+   "confiance": "NULLE",
+   "mots_reconnus": [],
+   "ambigu": false,
+   "incertain": true,
+   "verdict": "MANQUE",
+   "categorie_correcte": false,
+   "temps_ms": 0.29
+  },
+  {
+   "id": "D-031",
+   "texte": "les imprimantes du 3e ne repondent plus",
+   "source": "dev",
+   "attendu": "RESOLUTION_AUTO",
+   "categories_attendues": [
+    "Materiel"
+   ],
+   "critique": false,
+   "decision": "ESCALADE",
+   "categorie": "Inconnu",
+   "score": 0,
+   "confiance": "NULLE",
+   "mots_reconnus": [],
+   "ambigu": false,
+   "incertain": true,
+   "verdict": "MANQUE",
+   "categorie_correcte": false,
+   "temps_ms": 0.301
+  },
+  {
+   "id": "D-035",
+   "texte": "tout est lent sur mon pc aujourd hui",
+   "source": "dev",
+   "attendu": "RESOLUTION_AUTO",
+   "categories_attendues": [
+    "Performance"
+   ],
+   "critique": false,
+   "decision": "ESCALADE",
+   "categorie": "Infrastructure",
+   "score": 1,
+   "confiance": "MOYENNE",
+   "mots_reconnus": [
+    "tout"
+   ],
+   "ambigu": true,
+   "incertain": true,
+   "verdict": "MANQUE",
+   "categorie_correcte": false,
+   "temps_ms": 0.313
+  },
+  {
+   "id": "D-042",
+   "texte": "les applis se ferment toutes seules",
+   "source": "dev",
+   "attendu": "RESOLUTION_AUTO",
+   "categories_attendues": [
+    "Logiciel"
+   ],
+   "critique": false,
+   "decision": "ESCALADE",
+   "categorie": "Inconnu",
+   "score": 0,
+   "confiance": "NULLE",
+   "mots_reconnus": [],
+   "ambigu": false,
+   "incertain": true,
+   "verdict": "MANQUE",
+   "categorie_correcte": false,
+   "temps_ms": 0.273
+  },
+  {
+   "id": "D-044",
+   "texte": "personne ne m entend en visio",
+   "source": "dev",
+   "attendu": "RESOLUTION_AUTO",
+   "categories_attendues": [
+    "Collaboration"
+   ],
+   "critique": false,
+   "decision": "ESCALADE",
+   "categorie": "Infrastructure",
+   "score": 1,
+   "confiance": "MOYENNE",
+   "mots_reconnus": [
+    "personne"
+   ],
+   "ambigu": true,
+   "incertain": true,
+   "verdict": "MANQUE",
+   "categorie_correcte": false,
+   "temps_ms": 0.284
+  },
+  {
+   "id": "D-045",
+   "texte": "le partage d ecran ne fonctionne pas sur zoom",
+   "source": "dev",
+   "attendu": "RESOLUTION_AUTO",
+   "categories_attendues": [
+    "Collaboration"
+   ],
+   "critique": false,
+   "decision": "RESOLUTION_AUTO",
+   "categorie": "Compte / Acces",
+   "score": 1,
+   "confiance": "MOYENNE",
+   "mots_reconnus": [
+    "partage"
+   ],
+   "ambigu": true,
+   "incertain": true,
+   "verdict": "MAL_CATEGORISE",
+   "categorie_correcte": false,
+   "temps_ms": 0.341
+  },
+  {
+   "id": "D-051",
+   "texte": "le portail rh ne s ouvre pas dans firefox",
+   "source": "dev",
+   "attendu": "RESOLUTION_AUTO",
+   "categories_attendues": [
+    "Web / Intranet"
+   ],
+   "critique": false,
+   "decision": "RESOLUTION_AUTO",
+   "categorie": "Logiciel",
+   "score": 1,
+   "confiance": "MOYENNE",
+   "mots_reconnus": [
+    "ouvre"
+   ],
+   "ambigu": true,
+   "incertain": true,
+   "verdict": "MAL_CATEGORISE",
+   "categorie_correcte": false,
+   "temps_ms": 0.357
+  },
+  {
+   "id": "D-062",
+   "texte": "on m a piratee, mes contacts recoivent des mails de moi",
+   "source": "dev",
+   "attendu": "ESCALADE",
+   "categories_attendues": [
+    "Securite"
+   ],
+   "critique": true,
+   "decision": "RESOLUTION_AUTO",
+   "categorie": "Messagerie",
+   "score": 1,
+   "confiance": "MOYENNE",
+   "mots_reconnus": [
+    "mails"
+   ],
+   "ambigu": false,
+   "incertain": true,
+   "verdict": "FAUSSE_DANGEREUSE",
+   "categorie_correcte": false,
+   "temps_ms": 0.37
+  },
+  {
+   "id": "D-063",
+   "texte": "un faux site de la banque me demande mon mot de passe",
+   "source": "dev",
+   "attendu": "ESCALADE",
+   "categories_attendues": [
+    "Securite"
+   ],
+   "critique": true,
+   "decision": "RESOLUTION_AUTO",
+   "categorie": "Compte / Acces",
+   "score": 2,
+   "confiance": "HAUTE",
+   "mots_reconnus": [
+    "mot",
+    "passe"
+   ],
+   "ambigu": false,
+   "incertain": false,
+   "verdict": "FAUSSE_DANGEREUSE",
+   "categorie_correcte": false,
+   "temps_ms": 0.316
+  },
+  {
+   "id": "D-071",
+   "texte": "tous mes documents ont disparu du lecteur partage",
+   "source": "dev",
+   "attendu": "ESCALADE",
+   "categories_attendues": [
+    "Donnees"
+   ],
+   "critique": true,
+   "decision": "RESOLUTION_AUTO",
+   "categorie": "Compte / Acces",
+   "score": 2,
+   "confiance": "HAUTE",
+   "mots_reconnus": [
+    "partage",
+    "lecteur"
+   ],
+   "ambigu": false,
+   "incertain": false,
+   "verdict": "FAUSSE_DANGEREUSE",
+   "categorie_correcte": false,
+   "temps_ms": 0.296
+  },
+  {
+   "id": "D-073",
+   "texte": "mon disque dur fait un bruit bizarre et des fichiers sont illisibles",
+   "source": "dev",
+   "attendu": "ESCALADE",
+   "categories_attendues": [
+    "Donnees",
+    "Materiel"
+   ],
+   "critique": true,
+   "decision": "RESOLUTION_AUTO",
+   "categorie": "Compte / Acces",
+   "score": 1,
+   "confiance": "MOYENNE",
+   "mots_reconnus": [
+    "disque"
+   ],
+   "ambigu": false,
+   "incertain": true,
+   "verdict": "FAUSSE_DANGEREUSE",
+   "categorie_correcte": false,
+   "temps_ms": 0.349
+  },
+  {
+   "id": "D-076",
+   "texte": "mon badge ne passe plus a l entree",
+   "source": "dev",
+   "attendu": "ESCALADE",
+   "categories_attendues": [
+    "Inconnu"
+   ],
+   "critique": false,
+   "decision": "RESOLUTION_AUTO",
+   "categorie": "Compte / Acces",
+   "score": 1,
+   "confiance": "MOYENNE",
+   "mots_reconnus": [
+    "passe"
+   ],
+   "ambigu": false,
+   "incertain": true,
+   "verdict": "FAUSSE_HORS_PERIMETRE",
+   "categorie_correcte": false,
+   "temps_ms": 0.272
+  },
+  {
+   "id": "D-077",
+   "texte": "je souhaite poser un jour de teletravail",
+   "source": "dev",
+   "attendu": "ESCALADE",
+   "categories_attendues": [
+    "Inconnu"
+   ],
+   "critique": false,
+   "decision": "RESOLUTION_AUTO",
+   "categorie": "Reseau",
+   "score": 1,
+   "confiance": "MOYENNE",
+   "mots_reconnus": [
+    "teletravail"
+   ],
+   "ambigu": false,
+   "incertain": true,
+   "verdict": "FAUSSE_HORS_PERIMETRE",
+   "categorie_correcte": false,
+   "temps_ms": 0.302
+  }
+ ]
+}

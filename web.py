@@ -293,7 +293,7 @@ class Poignee(BaseHTTPRequestHandler):
         if not texte:
             self._envoyer(400, json.dumps({"erreur": "texte vide"}))
             return
-        resultat = soveris.analyser(texte)
+        resultat = soveris.traiter(texte)
         database.enregistrer(resultat)
         self._envoyer(200, json.dumps(resultat, ensure_ascii=False))
 

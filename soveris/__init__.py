@@ -109,11 +109,13 @@ def analyser(texte_ticket):
     meilleur_article = None
     meilleur_score = 0
     meilleurs_mots = []
+    candidats = []  # (score, categorie) de tous les articles reconnus
 
     for article in BASE_CONNAISSANCES:
         score, mots = scorer_article(texte_ticket, article)
         if score == 0:
             continue
+        candidats.append((score, article["categorie"]))
         gagne = score > meilleur_score
         # Egalite de score : la prudence l'emporte (N2 > N1).
         egalite_prudente = (
@@ -127,6 +129,12 @@ def analyser(texte_ticket):
             meilleur_article = article
             meilleurs_mots = mots
 
+    # Ambiguite : un autre article d'une AUTRE categorie fait le meme score.
+    ambigu = any(
+        s == meilleur_score and meilleur_article is not None and cat != meilleur_article["categorie"]
+        for s, cat in candidats
+    )
+
     temps_ms = (time.perf_counter() - depart) * 1000
 
     base = {
@@ -134,6 +142,7 @@ def analyser(texte_ticket):
         "score": meilleur_score,
         "mots_reconnus": meilleurs_mots,
         "confiance": niveau_confiance(meilleur_score),
+        "ambigu": ambigu,
         "temps_ms": round(temps_ms, 3),
     }
 
@@ -186,7 +195,37 @@ def analyser(texte_ticket):
     }
 
 
-# Permet de tester ce fichier seul : python soveris.py
+def est_incertain(resultat):
+    """
+    Une decision est "incertaine" (a revoir par un humain) si :
+      - aucun mot-cle n'a ete reconnu (categorie Inconnu), ou
+      - le score est au niveau du seuil minimal (un seul indice), ou
+      - deux articles de categories differentes sont a egalite.
+    Sert au journal (file "a revoir") et au diagnostic ; ne change pas la decision.
+    """
+    return (
+        resultat["categorie"] == "Inconnu"
+        or resultat["score"] <= SEUIL_CONFIANCE
+        or resultat.get("ambigu", False)
+    )
+
+
+def traiter(texte_ticket):
+    """
+    Analyse ET journalise (usage "production" : demo, web).
+    analyser() reste pure pour l'evaluation ; traiter() ajoute le journal local
+    des decisions (sans donnee personnelle) et la file "a revoir".
+    """
+    from . import journal  # import local : le journal n'est charge qu'en usage reel
+    resultat = analyser(texte_ticket)
+    try:
+        journal.consigner(resultat, est_incertain(resultat))
+    except OSError:
+        pass  # le journal ne doit jamais faire echouer le traitement
+    return resultat
+
+
+# Permet de tester ce module seul : python -m soveris demo
 if __name__ == "__main__":
     exemples = [
         "Je n'arrive plus a me connecter au wifi",
