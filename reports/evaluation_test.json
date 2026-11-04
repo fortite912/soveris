@@ -1,6 +1,6 @@
 {
  "jeu": "test",
- "horodatage": "2026-11-04T13:23:54",
+ "horodatage": "2026-11-04T13:32:13",
  "total": 50,
  "corrects": 48,
  "precision": 96.0,
@@ -13,10 +13,10 @@
  "critiques_mal_orientees": 0,
  "incertains": 17,
  "latence_ms": {
-  "mediane": 0.608,
-  "p95": 0.721,
-  "max": 6.172,
-  "total_jeu": 36.9
+  "mediane": 0.639,
+  "p95": 0.913,
+  "max": 5.461,
+  "total_jeu": 39.7
  },
  "par_classe": {
   "Reseau": {
@@ -177,7 +177,7 @@
    "incertain": false,
    "verdict": "FAUSSE_HORS_PERIMETRE",
    "categorie_correcte": false,
-   "temps_ms": 0.593
+   "temps_ms": 0.717
   }
  ],
  "details_critiques_mal_orientees": [],
@@ -322,7 +322,7 @@
    "incertain": true,
    "verdict": "MANQUE",
    "categorie_correcte": false,
-   "temps_ms": 0.558
+   "temps_ms": 0.585
   },
   {
    "id": "T-048",
@@ -344,7 +344,7 @@
    "incertain": false,
    "verdict": "FAUSSE_HORS_PERIMETRE",
    "categorie_correcte": false,
-   "temps_ms": 0.593
+   "temps_ms": 0.717
   }
  ]
 }

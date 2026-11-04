@@ -1,5 +1,5 @@
 {
- "horodatage": "2026-11-04T13:23:54",
+ "horodatage": "2026-11-04T13:32:13",
  "verdict": "OK",
  "code_sortie": 0,
  "baseline": {
@@ -84,11 +84,11 @@
   "unittest (tests/)": {
    "ok": true,
    "code": 0,
-   "duree_s": 1.61,
+   "duree_s": 29.1,
    "dernieres_lignes": [
-    "....................",
+    "........................",
     "----------------------------------------------------------------------",
-    "Ran 20 tests in 1.487s",
+    "Ran 24 tests in 28.906s",
     "",
     "OK"
    ]
@@ -130,7 +130,7 @@
     "Donnees": 100.0,
     "Inconnu": 87.5
    },
-   "latence_p95_ms": 0.721
+   "latence_p95_ms": 0.913
   },
   "dev": {
    "total": 83,
@@ -154,7 +154,7 @@
     "Donnees": 100.0,
     "Inconnu": 100.0
    },
-   "latence_p95_ms": 0.717
+   "latence_p95_ms": 0.966
   },
   "synthetique": {
    "total": 204,
@@ -178,7 +178,7 @@
     "Donnees": 100.0,
     "Inconnu": 100.0
    },
-   "latence_p95_ms": 0.666
+   "latence_p95_ms": 1.003
   }
  },
  "ecarts": [],

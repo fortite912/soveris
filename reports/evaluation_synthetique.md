@@ -1,6 +1,6 @@
 # Evaluation — jeu `synthetique`
 
-_Genere le 2026-11-04T13:23:54_
+_Genere le 2026-11-04T13:32:13_
 
 | Indicateur | Valeur |
 |---|---|
@@ -9,7 +9,7 @@ _Genere le 2026-11-04T13:23:54_
 | Erreurs critiques (fausse resolution) | 0 |
 | Escalades critiques mal orientees | 0 |
 | Decisions incertaines | 48 |
-| Latence mediane / p95 / max (ms) | 0.595 / 0.666 / 1.115 |
+| Latence mediane / p95 / max (ms) | 0.706 / 1.003 / 1.073 |
 
 ## Verdicts
 

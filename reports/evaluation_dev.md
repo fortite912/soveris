@@ -1,6 +1,6 @@
 # Evaluation — jeu `dev`
 
-_Genere le 2026-11-04T13:23:54_
+_Genere le 2026-11-04T13:32:13_
 
 | Indicateur | Valeur |
 |---|---|
@@ -9,7 +9,7 @@ _Genere le 2026-11-04T13:23:54_
 | Erreurs critiques (fausse resolution) | 0 |
 | Escalades critiques mal orientees | 1 |
 | Decisions incertaines | 24 |
-| Latence mediane / p95 / max (ms) | 0.591 / 0.717 / 0.943 |
+| Latence mediane / p95 / max (ms) | 0.764 / 0.966 / 1.13 |
 
 ## Verdicts
 

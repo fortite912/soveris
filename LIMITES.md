@@ -1,7 +1,9 @@
 # Limites connues & chemin d'industrialisation
 
-> Soveris est un **prototype validé** (92 % de décisions correctes sur banc de
-> validation, zéro fausse résolution dangereuse), **pas un produit industriel**.
+> Soveris est un **prototype validé** (48/50 décisions correctes sur le jeu de
+> test gelé, zéro fausse résolution dangereuse — voir `docs/DIAGNOSTIC.md` et
+> `docs/JOURNAL_AMELIORATIONS.md`), **pas un produit industriel**. Les cas
+> d'échec et risques détaillés sont dans `docs/limites-et-risques.md`.
 > Ce document liste sans complaisance ce qui sépare ce POC d'un déploiement
 > réel en DSI. Ces limites sont connues, documentées et assumées.
 
@@ -21,8 +23,9 @@
 - 15 articles rédigés à la main. Un déploiement réel en demanderait des
   **centaines**, avec un outil d'édition pour les techniciens et une
   gouvernance (qui valide une solution avant qu'elle soit servie ?).
-- Pas encore d'apprentissage depuis les tickets résolus (boucle
-  d'enrichissement manuelle).
+- Boucle d'amélioration : file « à revoir » et recalibrage automatique des
+  paramètres (`docs/AUTO_AMELIORATION.md`) ; l'enrichissement du vocabulaire
+  reste manuel.
 
 ## 3. Intégration au système d'information
 - **Aucun connecteur** vers les outils réels (GLPI, ServiceNow, messagerie,
@@ -54,9 +57,10 @@
   mécanisme de mise à jour, pas de supervision de l'agent lui-même.
 
 ## 7. Portée des mesures
-- **70 %** = jeu de démonstration (10 tickets) ; **92 %** = banc de validation
-  interne (50 tickets variés). Le taux réel en production est **inconnu** tant
-  qu'aucun pilote encadré n'a tourné — et il n'est jamais présenté autrement.
+- **70 %** = jeu de démonstration (10 tickets) ; **96 %** (48/50) = jeu de test
+  gelé ; **98,8 %** (82/83) = jeu de dev sur lequel on a itéré. Le taux réel en
+  production est **inconnu** tant qu'aucun pilote encadré n'a tourné — et il
+  n'est jamais présenté autrement.
 
 ---
 

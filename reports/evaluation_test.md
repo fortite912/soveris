@@ -1,6 +1,6 @@
 # Evaluation — jeu `test`
 
-_Genere le 2026-11-04T13:23:54_
+_Genere le 2026-11-04T13:32:13_
 
 | Indicateur | Valeur |
 |---|---|
@@ -9,7 +9,7 @@ _Genere le 2026-11-04T13:23:54_
 | Erreurs critiques (fausse resolution) | 1 |
 | Escalades critiques mal orientees | 0 |
 | Decisions incertaines | 17 |
-| Latence mediane / p95 / max (ms) | 0.608 / 0.721 / 6.172 |
+| Latence mediane / p95 / max (ms) | 0.639 / 0.913 / 5.461 |
 
 ## Verdicts
 
