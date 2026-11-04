@@ -50,3 +50,4 @@ desktop.ini
 
 # --- Journal local des decisions (jamais publie) ---
 journal/
+reports/calibration.json

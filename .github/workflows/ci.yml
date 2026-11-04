@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  tests-et-diagnostic:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ["3.11", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Tests unitaires
+        run: python -m unittest discover -s tests -t . -v
+      - name: Suite historique
+        run: python tests.py
+      - name: Auto-diagnostic (regressions contre reports/baseline.json)
+        run: python -m soveris diagnose
+      - name: Rapports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rapports-python-${{ matrix.python }}
+          path: reports/

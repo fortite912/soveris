@@ -28,6 +28,7 @@ def main(argv=None):
 
     p_cal = sous.add_parser("calibrer", help="auto-amelioration controlee")
     p_cal.add_argument("--appliquer", action="store_true", help="ecrit les parametres retenus")
+    p_cal.add_argument("--commit", action="store_true", help="avec --appliquer : cree un commit git reversible")
 
     sous.add_parser("integrer-revues", help="integre les corrections de la file a revoir dans dev")
     sous.add_parser("demo", help="exemples")
@@ -63,7 +64,7 @@ def main(argv=None):
 
     if args.commande == "calibrer":
         from . import auto_amelioration
-        return auto_amelioration.executer(appliquer=args.appliquer)
+        return auto_amelioration.executer(appliquer=args.appliquer, commit=args.commit)
 
     if args.commande == "integrer-revues":
         from . import journal
